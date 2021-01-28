@@ -1,0 +1,171 @@
+\documentclass[12pt]{article}
+
+\marginparwidth 0.5in
+\oddsidemargin 0.25in
+\evensidemargin 0.25in
+\marginparsep 0.25in
+\topmargin 0.25in
+\textwidth 6in
+\textheight 8 in
+
+\usepackage{setspace,graphicx,epstopdf,amsmath,amsfonts,amssymb,amsthm}
+\usepackage{marginnote,datetime,enumitem,subfigure,rotating}
+\usepackage{float} \usepackage[longnamesfirst]{natbib}
+
+\newtheorem{condition}{Condition} \newtheorem{remark}{Remark}
+\newtheorem{corollary}{COROLLARY}
+\newtheorem{proposition}{PROPOSITION} \newtheorem{obs}{OBSERVATION}
+\newcommand{\argmax}{\mathop{\rm arg\,max}}
+\newcommand{\sign}{\mathop{\rm sign}}
+\newcommand{\defeq}{\stackrel{\rm def}{=}}
+
+
+\setlength{\hoffset}{-0.4in}
+\setlength{\textwidth}{6.8in}
+\setlength{\textheight}{9.3in}
+\setlength{\topmargin}{-0.5in}
+
+
+\begin{document}
+
+\author{}
+\title{A Risk-based Theory of Exchange Rate Stabilization: \\
+  Implementation with Intermediaries}
+
+\maketitle
+
+\setstretch{1.5}
+
+\noindent
+There are two discrete time periods, $t = 1, 2$. There exists a unit
+measure of households $i \in [0, 1]$, partitioned into three subsets
+$\Theta^n$ of measure $\theta^n$. Each subset represents the
+constituent agents of a country. We label these countries
+$n = \left\{ m, t, o \right\}$ for the stabilizing (manipulating),
+target and outside countries, respectively. Agents make an investment
+decision in the first period. All consumption occurs in the second
+period.
+
+Within a country $n$, a fraction $1 - \phi^n$ of agents are households
+and do not have direct access to international financial markets.
+Households can only save in the form of real bonds. The remaining
+fraction $\phi^n$ of agents run financial intermediaries. Financial
+intermediaries can invest in both domestic and foreign real bonds. In
+the first period, households save by transferring all of their wealth
+to the financial intermediary in return for a real domestic bond.
+
+All agents derive utility from a consumption index comprising a
+country-specific non-traded good, $C_N$, and a traded good, $C_T$:
+\begin{equation*}
+  C(i) = C_T(i)^{\tau} C_N(i)^{1 - \tau}
+\end{equation*}
+and $\tau \in (0, 1)$. Agents exhibit constant relative risk aversion
+according to:
+\begin{equation}
+  U(i) = \frac{1}{1 - \gamma} 
+  \mathbb{E}\left[  \left( C(i) \right)^{1 - \gamma} \right]
+  \label{eqn:utility}
+\end{equation}
+where $\gamma > 0$ is the coefficient of relative risk aversion.
+
+\subsection*{Firms}
+
+In each country $n$, there also exists a mass $\theta^n$ of firms that
+produce their own country-specific non-traded good using a
+Cobb-Douglas production technology that employs capital and labor.
+Each firm is endowed with a unit of capital in the first period.
+Capital goods can only be freely shipped in the first period when they
+are invested for use in the production of non-traded goods in the
+second period. The capital good fully depreciates after production
+occurs in the second period. Each household supplies one unit of labor
+inelastically towards production in the second period. The per capita
+output of non-traded goods is
+\begin{equation*}
+  Y_N^n  = \exp \left( \eta^n \right) \left( K^n \right)^{\nu}
+\end{equation*}
+where $0 < \nu < 1$ is the capital share in production, $K^n$ is the
+{\emph per capita} stock of capital in country $n$ and $\eta^n$ is a
+country-specific productivity shock realized at the start of the
+second period,
+\begin{equation*}
+  \eta^n \sim N\left( - \frac{1}{2} \sigma_N^2, \sigma_N^2 \right).
+\end{equation*}
+
+\subsection*{Cash-in-Advance}
+
+To formally introduce currencies, all agents face a cash-in-advance
+constraint -- They must use their domestic currency when buying assets
+in period 1, and when buying consumption goods in period 2. Each
+central bank controls its own money supply. Let $\Delta M^n_1$ and
+$\Delta M^n(\omega)$ denote the growth in the money supply in the
+first and second periods, respectively.
+
+In the second period, (inactive) households receive their bond payoff
+from the intermediaries and consume:
+\begin{equation*}
+  \tilde{P}^n_T \hat{C}^n_T(\omega) + \tilde{P}^n_N \hat{C}^n_N(\omega)
+  \le \tilde{P}^n.
+\end{equation*}
+The intermediary faces the following cash-in-advance constraint:
+\begin{equation*}
+  \tilde{P}^n_T C^n_T(\omega) + P^n_N \hat{C}^n_N(\omega)
+  + \frac{1 - \phi^n}{\phi^n} \tilde{P}^n(\omega)
+  \le \tilde{M}^n_2(\omega).
+\end{equation*}
+where $\tilde{M}^n_2(\omega)$ is the total quantity of currency
+available to the country $n$ intermediary to use to spend on
+consumption and to transfer to the household. This quantity of
+currency comprises the monetary payoff from the intermediary's bond
+portfolio and any additional money balances the central bank injects
+through open market operations:
+\begin{equation*}
+  \Delta \tilde{M}^n(\omega)
+  = \tilde{M}^n_2(\omega)
+  - \left(
+    \frac{1}{\phi^n} \left(
+      \tilde{P}^n_T(\omega) Y^n_T + \tilde{P}^n_N(\omega) Y^n_N(\omega)
+    \right) + \sum_\ell B^n_\ell \tilde{P}^n(\omega) 
+  \right).
+\end{equation*}
+
+The central bank in each country controls the money supply through
+$\Delta M^n(\omega)$ in order to stabilize the nominal exchange rate.
+
+\subsection*{Equilibrium}
+
+The intermediary's first order conditions with respect to traded and
+non-traded goods are standard. Because the utility functions are
+Cobb-Douglas, intermediaries and households spend a fraction $\tau$ of
+their total wealth on traded goods and a fraction $1 - \tau$ on
+non-traded goods. Intermediaries consume:
+\begin{align}
+  C^n_T(\omega)
+  & = \tau \frac{
+    \tilde{M}^n_2(\omega) - ((1 - \phi^n) / \phi^n) \tilde{P}^n(\omega)
+    }{\tilde{P}^n_T(\omega)}  \\
+  C^n_N(\omega)
+  & = (1 - \tau) \frac{
+    \tilde{M}^n_2(\omega) - ((1 - \phi^n) / \phi^n) \tilde{P}^n(\omega)
+    }{\tilde{P}^n_N(\omega)}
+\end{align}
+Household consumption is given by:
+\begin{align}
+  \hat{C}^n_T(\omega)
+  & = \tau \frac{\tilde{P}^n(\omega)}{\tilde{P}^n_T(\omega)}  \\
+  \hat{C}^n_N(\omega)
+  & = (1 - \tau) \frac{\tilde{P}^n(\omega)}{\tilde{P}^n_N(\omega)}
+\end{align}
+The market clearing conditions for traded and non-traded goods are:
+\begin{equation}
+  \sum_n \theta^n \left( \phi^n C^n_N(\omega) + (1 - \phi^n) \hat{C}^n_N(\omega)  \right) = 1,
+\end{equation}
+and
+\begin{equation}
+  \phi^n C^n_N(\omega) + (1 - \phi^n) \hat{C}^n_N(\omega) = Y^n_N.
+\end{equation}
+
+
+
+\end{document}
+
+

@@ -1,7 +1,13 @@
 *.rtf
+*.aux
 *.bat
+*.bbl
+*.blg
+*.log
+*.out
 Legacy/
 auto/
 CUWARSPaper.pdf
+CUWARSImplementation.pdf
 HMZ Currency Manipulation.pdf
 _region_.tex

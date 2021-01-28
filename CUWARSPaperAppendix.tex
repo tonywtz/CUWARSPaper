@@ -1,0 +1,2199 @@
+\section{Additional Empirical Results \label{Appendix_Empirics}}
+
+\begin{table}[htp!]
+  \caption{Interest Rate Differentials, Capital Intensity, and
+    Exchange Rate Regimes \vspace{-1em}}
+  \label{table:stylized}
+  \begin{center}
+    \begin{tabular}{l c c c }
+      \hline
+      \hline
+      Panel A: & \multicolumn{3}{c}{\emph{Table Corresponding to Figure \ref{fig_stylized}}} \\
+      \cline{2 - 4} \vspace{-1em} \\
+               & Interest Rate Diff. & FX Excess Returns & Capital Intensity \\
+      \hline
+      FX Allowed Deviation            & $0.41^{***}$   & $0.35^{**}$   & $-1.56^{**}$     \\
+               & $(0.13)$       & $(0.15)$      & $(0.74)$       \\
+      GDP Share & $-23.36^{***}$ & $-12.50^{**}$ & $86.82^{***}$ \\
+               & $(7.54)$       & $(5.85)$      & $(27.83)$       \\
+      \hline
+      Num. obs.               & 7,515           & 7,515          & 662            \\
+      R$^2$       & 0.12           & 0.00          & 0.06           \\
+      \hline
+      Panel B: & \multicolumn{3}{c}{\emph{Table with Alternative Measure of Stabilization}} \\
+      \cline{2 - 4} \vspace{-1em} \\
+               & Interest Rate Diff. & FX Excess Returns & Capital Intensity \\
+      \hline
+      $\zeta$ & $-4.08^{***}$  & $-3.51^{**}$  & $15.58^{**}$    \\
+               & $(1.28)$       & $(1.49)$      & $(7.41)$       \\
+      GDP Share & $-23.36^{***}$ & $-12.50^{**}$ & $86.82^{***}$ \\
+               & $(7.54)$       & $(5.85)$      & $(27.83)$       \\
+      \hline
+      Num. obs.               & 7,515           & 7,515          & 662            \\
+      R$^2$       & 0.12           & 0.00          & 0.06           \\
+      \hline
+      Panel C: & \multicolumn{3}{c}{\emph{Summary Statistics}} \\
+      \cline{2 - 4} \vspace{-1em} \\ 
+               & & Mean & Std. Dev \\
+      \hline
+      Interest Rate Diff. (\%) &  & 1.95 & 4.56 \\ 
+      FX Excess Returns (\%) &  & 2.29 & 36.44  \\ 
+      Capital Intensity (\%) & & 118.86 & 24.12 \\ 
+      FX Allowed Deviation (\%) & & 3.54 & 3.65 \\ 
+      $\zeta$ & & 0.65 & 0.37 \\ 
+      GDP Share & & 0.04 & 0.07  \\ 
+      \hline
+      \hline
+    \end{tabular}
+  \end{center}
+  \small\textit{Notes: } This table shows panel regressions of
+  interest rate differentials, currency excess returns, and capital
+  intensity on the allowed annual standard deviation under the issuing
+  country's exchange rate regime and country size (the share the
+  issuing country contributes to World GDP). The sample and data
+  construction correspond to Figure \ref{fig_stylized}. Panel A shows
+  the full regression output corresponding to the conditional scatter
+  plots in Figure \ref{fig_stylized}. Panel B shows an alternative
+  specification that follows more closely the model by using
+  $\zeta=1-(FX\text{}Allowed\text{ }Deviation)/10 $ as a regressor,
+  where we again assume that a freely floating exchange rate amounts
+  to an allowed annual standard deviation of 10\%. Standard errors are
+  clustered by currency. Panel C displays summary statistics. Capital
+  intensity is the log capital to output ratio. Interest Rate Diff.,
+  FX Excess Returns, Capital Intensity, and FX Allowed Deviation are
+  all given in percent. See the caption of Figure \ref{fig_stylized}
+  for details.
+\end{table}
+
+
+\clearpage
+
+\section{Appendix to Section \ref{sec_ReducedFormResults}
+  \label{Appendix_ReducedFormResults}}
+
+The country $n$ risk-free bond pays off $P^n$ units of the traded good
+at maturity. We derive the value of the risk-free bond, $V^n_P$, by
+applying the asset pricing equation to the bond payoff:
+\begin{equation*}
+  V^n_P = \mathbb{E}\left[\Lambda_{T} P^n
+  \right],
+\end{equation*}
+where $\Lambda_{T}$ denotes the stochastic discount factor. The
+country $n$ risk-free rate (in levels), $R^n$, is the inverse of the
+price of the risk-free bond:
+\begin{equation*}
+  R^n = \frac{1}{V^n_P}.
+\end{equation*}
+Putting the previous two equations together yields the following
+relationship:
+\begin{equation*}
+  \mathbb{E}\left[ \Lambda_{T} P^n \right] R^n = 1.
+\end{equation*}
+As a result, the risk-free rates of countries $f$ and $h$ are related
+as follows:
+\begin{equation*}
+  \mathbb{E}\left[\Lambda_{T} P^f \right] R^f
+  = \mathbb{E}\left[\Lambda_{T} P^h \right] R^h = 1
+\end{equation*} 
+If the stochastic discount factor and prices are log-normal, we can
+perform the following calculations:
+\begin{align*}
+  & \mathbb{E}\left[\Lambda_{T} P^f \right] R^f
+    = \mathbb{E}\left[\Lambda_{T} P^h \right] R^h \\
+  \Leftrightarrow\quad
+  & \mathbb{E}\left[\exp\left[ \lambda_{T} + p^f + r^f \right]\right]
+    = \mathbb{E}\left[\exp\left[\lambda_{T} + p^h + r^h \right]\right] \\
+  \Leftrightarrow\quad
+  & \mathbb{E}\left[\lambda_{T} + p^f\right] + \frac{1}{2}\text{var}\left(\lambda_{T}\right) + 
+    \frac{1}{2}\text{var}\left(p^f\right) + \text{cov}\left(\lambda_{T}, p^f\right) + r^f \\
+  & = 
+    \mathbb{E}\left[\lambda_{T}+ p^h\right] + \frac{1}{2}\text{var}\left(\lambda_{T}\right)+ 
+    \frac{1}{2}\text{var}\left(p^h\right) + \text{cov}\left(\lambda_{T}, p^h\right)+r^h,
+\end{align*}
+We cancel out $\text{var}\left( \lambda_{T} \right)$ from both sides
+of the previous equation.
+\begin{align*}
+  &\mathbb{E}\left[p^f\right]+\frac{1}{2}\text{var}\left(p^f\right) + \text{cov}\left(\lambda_T, p^f\right)+r^f
+    = \mathbb{E}\left[p^h\right]+\frac{1}{2}\text{var}\left(p^h\right)+\text{cov}\left(\lambda_T,p^h\right)+r^h
+  \\      \Leftrightarrow \quad
+  & r^f+\mathbb{E}\left[p^f-p^h\right]+\frac{1}{2}\text{var}\left(p^f\right)-\frac{1}{2}\text{var}\left(p^h\right)-r^h = -\text{cov}\left(\lambda_T,p^f-p^h\right)\\   
+  \Leftrightarrow\quad
+  &r^f+\log\left(\mathbb{E}\left[P^f\right]/\mathbb{E}\left[P^h\right]\right)-r^h = -\text{cov}\left(\lambda_T,p^f-p^h\right)
+\end{align*}
+We define
+$\Delta\mathbb{E}\left[s^{f,h}\right]
+=\log\left(\mathbb{E}\left[P^f\right]/\mathbb{E}\left[P^h\right]\right).$
+With this definition:
+\begin{equation*}
+  r^f+\Delta\mathbb{E}\left[s^{f,h}\right]-r^h = -\text{cov}\left(\lambda_T,p^f-p^h\right).
+\end{equation*}
+
+
+\section{Appendix to Sections \ref{sec:environment} -
+\ref{sec:positive_effects}}
+
+
+\subsection{Equilibrium Conditions
+  \label{Appendix_ModelDetails}}
+
+In this appendix, we provide additional details for our baseline model
+in Section \ref{sec:environment} and formally derive its equilibrium
+conditions. To avoid solving the optimization problem separately for
+households in the stabilizing country and households in the rest of
+the world, we generalize the notation to allow all countries to impose
+state-contingent taxes, $Z^n(\omega)$, and provide lump sum transfers,
+$\bar{Z}^n$. The governments in the target and outside countries do
+not use these instruments, such that $Z^t(\omega)=Z^o(\omega) = 1$ and
+$\bar{Z}^t =\bar{Z}^o= 0$.
+
+In the second period, all households maximize their utility
+(\ref{eqn:utility}) subject to their budget constraint:
+\begin{equation}
+  Z^n(\omega) C_T^n(\omega) + P_N^n(\omega) C_N^n(\omega)  
+  \le \sum_l A_l^n P_N^l(\omega) Y_N^l(\omega) + Y_T 
+  \label{eqn:budget_cons_2}
+\end{equation}
+where $P^n_N(\omega)$ is the price of the nontraded good in the
+stabilizing country in state $\omega$, $A^n_l$ is number the stocks a
+country $n$ household owns in the firm in country $l$, and $Y_T = 1$
+is the unit endowment of the traded good.
+
+In the first period, households choose their portfolio of stocks to
+maximize expected utility in the second period. The first-period
+budget constraint reads:
+\begin{equation}
+  \sum_l A_l^n Q^l_N + Q_K K^n_N \le W^n_0.
+  \label{eqn:budget_cons_1}
+\end{equation}
+where $W^n_0$ represents initial household wealth in terms of traded
+goods in the first period.
+
+$\Lambda_T^n(\omega)$ denotes the Lagrange multiplier on the budget
+constraint for the country $n$ household in state $\omega$ in the
+second period. The first-order conditions are:
+\begin{align}
+  \frac{\tau \left( C^n(\omega)^{1 - \gamma} \right) 
+  \left( C_T^n(\omega) \right)^{-1}}{Z^n(\omega)}
+  & = \Lambda^n_T(\omega) \label{eqn:FOCCT_full}\\ 
+  (1 - \tau) \left( C^n(\omega)^{1 - \gamma} \right) 
+  \left( C_N^n(\omega) \right)^{-1} & = \Lambda^n_T(\omega) P^n_N(\omega).
+                                      \label{eqn:FOCCN_full}
+\end{align}
+The consumption tax drives a wedge between the marginal utility of
+consumption of traded goods and its shadow price, as equation
+\eqref{eqn:FOCCT_full} shows. Equations \eqref{eqn:FOCCN} and
+\eqref{eqn:FOCCN_full} jointly imply
+$P_N^n(\omega)= \Lambda_N^n(\omega) / \Lambda^n_T(\omega)$.
+
+Next, we derive equilibrium conditions that determine first-period
+investment in stocks and capital. Since the final consumption bundle
+is a Cobb-Douglas aggregate of traded and nontraded goods, households
+spend a fraction $\tau$ of their second-period wealth on traded
+consumption and a fraction $1 - \tau$ on nontraded consumption:
+\begin{align*}
+  C^n_T(\omega) = \tau
+  \left( \frac{\sum_l A^n_l P^l_N(\omega) Y^l_N(\omega) + 
+  Y_T}{Z^n(\omega)} \right) \text{ and }
+  C^n_N(\omega) = (1 - \tau)
+  \left( \frac{\sum_l A^n_l P^l_N(\omega) Y^l_N(\omega) + 
+  Y_T}{P^n_N(\omega)} \right).
+\end{align*}
+In the first period, households choose their portfolio of stocks and
+firms decide on their capital investment, $K^n_N$. We plug the
+consumption of traded and nontraded goods into equations
+(\ref{eqn:cesutil}) and (\ref{eqn:utility}) and take first-order
+conditions to obtain:
+\begin{equation*}
+  Q^l_N
+  = \mathbb{E}\left[
+    \left( \frac{\tau^\tau (1 - \tau)^{1 -\tau}}{\Lambda_{T, 1}^n \left( Z^n(\omega) \right)^{\tau}
+        \left(P^n_N(\omega) \right)^{1 - \tau}} \right)
+    \left( C^n(\omega) \right)^{- \gamma} P^l_N(\omega) Y^l_N(\omega) \right],
+\end{equation*}
+where $\Lambda_{T, 1}^n$ denotes the Lagrange multiplier on the
+first-period budget constraint for a household in country $n$.
+
+
+Divide through by $Q^l_N$ and apply the definition of the price index
+$P^n(\omega)$ given by equation \eqref{eqn:price_index} in Appendix
+\ref{Appendix_PriceIndex} to obtain
+\begin{equation}
+  \mathbb{E}\left[ \frac{\Lambda_T^n(\omega)}{\Lambda_{T, 1}^n} 
+    \frac{P^l_N(\omega) Y^l_N(\omega)}{Q_N^l} \right] = 1.
+  \label{eqn:FOC_Stock}
+\end{equation}
+
+Firms invest in capital to maximize the expected discounted value of
+profits:
+\begin{equation*}
+  \max_{K^n} \mathbb{E}\left[ 
+    \left( \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}} \right) 
+    P_N^n(\omega) \exp\left( \eta^n \right) \left( K^n \right)^{\nu} \right] - 
+  Q_K \left( K^n - 1 \right).
+\end{equation*}
+Their first-order condition with respect to $K^n$
+yields\begin{equation*} Q_K = \nu \mathbb{E}\left[
+    \frac{\Lambda_T^n(\omega)}{\Lambda_{T, 1}^n} P^n_N(\omega)
+    \exp\left( \eta^n \right) \left(K^n\right)^{\nu - 1} \right].
+\end{equation*}
+Multiply both sides of the previous equation by $K^n$, divide by
+$Q_K$, substitute $Y_N^n = \exp(\eta^n) \left( K^n \right)^\nu$, and
+apply the definition of $P^n_N(\omega)$ to get (\ref{eqn:FOCK}).
+
+Equations \eqref{eqn:FOC_Stock} and \eqref{eqn:FOCK} show
+$\Lambda^n_T(\omega) / \Lambda^n_{T, 1}$ are the stochastic discount
+factors used to price assets that pay off in traded goods in the
+second period. Since stocks and capital are freely traded in
+international markets, all households must be marginal to investing in
+all stocks and all firms must be marginal to purchasing an additional
+unit of capital. As a result, the stochastic discount factors are
+equal in equilibrium across countries,
+\begin{equation}
+  \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}} = 
+  \frac{\Lambda^m_T(\omega)}{\Lambda^m_{T, 1}} \quad
+  \forall ~n, m,
+  \label{eqn:sdf_equal}
+\end{equation}
+even though the government's intervention drives a wedge between
+$\Lambda_T(\omega)$ and the marginal utility of traded consumption in
+the stabilizing country, as equation \eqref{eqn:FOCCT_full} shows.
+
+As a final step, we derive the equations that pin down the first and
+second-period Lagrange multipliers. Household wealth in the first
+period is:
+\begin{equation*}
+  W^n_0 = Q^n_N + Q_K + \kappa^n + \bar{Z}^n,
+\end{equation*}
+Recall that households are endowed with a unit of stock and a unit of
+capital. $\kappa^n$ is the transfer that equalizes the marginal
+utility of wealth across households when countries do not manipulate
+the exchange rate, and the transfer $\bar{Z}^m$ ensures the same is
+true under a stabilization, so that\begin{equation} \Lambda^{n}_{T, 1}
+  = \Lambda^{}_{T, 1} \quad \forall ~n.
+  \label{eqn:mult_equal}
+\end{equation}
+As a result, \eqref{eqn:sdf_equal} implies
+\begin{equation*}
+  \Lambda^n_T(\omega) = \Lambda_T(\omega)
+  \quad \forall ~n, \omega.
+\end{equation*}
+
+Hence, we drop the country index on the Lagrange multipliers, and
+interpret $\Lambda_T(\omega)$ as the shadow price of traded
+consumption in the target and outside countries in the second period.
+This result implies equations \eqref{eqn:FOCCT}, \eqref{eqn:FOCCN} and
+\eqref{eqn:FOCK}.
+
+Equation \eqref{eqn:mult_equal} shows the first-period Lagrange
+multipliers are equal to each other, but it does not determine the
+level of the Lagrange multipliers. Without loss of generality, we
+normalize the first period Lagrange multiplier:
+\begin{equation}
+  \Lambda_{T, 1} =  \mathbb{E}\left[ \Lambda^n_T(\omega) \right].
+  \label{eqn:norm_lambda}
+\end{equation}
+
+
+\subsection{Deriving the Price Index \label{Appendix_PriceIndex}}
+The cost of one unit of consumption in country $n$ is given by the price index
+\begin{equation}
+  P^n = \arg \min C_T^n + P_N^n C_N^n \text{ s.t. } 
+  \left( C_T^n \right)^\tau \left( C_N^n \right)^{1 - \tau} = 1.
+  \label{eqn:InactiveProblem}
+\end{equation}
+First-order conditions imply
+$C^n_N = \left( 1 - \tau \right) / \left( P^n_N \tau \right) C^n_T$. We plug
+this expression for $C_N^n$ into the constraint
+$\left( C_T^n \right)^\tau \left( C_N^n \right)^{1 - \tau} = 1$, and
+solve for $C_T^n$:
+\begin{equation*}
+  C_T^n = \left( \frac{\tau}{1 - \tau} P_N^n \right)^{1 - \tau}.
+\end{equation*}
+We plug the expressions for $C_T^n$ and $C_N^n$ back into equation
+(\ref{eqn:InactiveProblem}) to derive the optimal price index:
+\begin{equation}
+  P^n = \frac{ \left( P_N^n \right)^{1 - \tau}}{\tau^\tau (1 - \tau)^{1 - \tau}}.
+  \label{eqn:price_index}
+\end{equation}
+The total value of consumption for households in country $n$ is
+\begin{equation*}
+  P^n C^n = 
+  \left( \frac{ \left( P_N^n \right)^{1 - \tau}}{\tau^\tau (1 - \tau)^{1 - \tau}} \right)
+  \left( \left( C_T^n \right)^\tau \left( C_N^n \right)^{1 - \tau} \right) = 
+  \frac{C_T^n}{\tau}.
+\end{equation*}
+Similarly, we use the expression
+$P_N^n = \frac{1 - \tau}{\tau}\frac{C_T^n}{C_N^n}$ to show that
+\begin{equation*}
+  C_T^n + P_N^n C_N^n = \frac{C_T^n}{\tau} = P^n C^n.
+\end{equation*}
+
+\subsection{Log-linearized System of
+  Equations \label{Appendix_Loglinear}}
+
+This appendix derives the log-linearized first-order conditions. To
+reiterate, we log-linearize around the deterministic solution --- the
+point at which the variances of shocks are zero
+$\left( \sigma_{N, n} = 0 \right)$ and all firms have a capital stock
+fixed at the deterministic steady-state level.
+
+We have shown in Appendix \ref{Appendix_ModelDetails} that the
+stochastic discount factor $\Lambda^n_T(\omega) / \Lambda^n_{T, 1}$ is
+equalized across all households in all states. It is convenient to
+write the logarithm of this stochastic discount factor as:
+\begin{equation*}
+  q = \lambda^n_T - \lambda^n_{T, 1}.
+\end{equation*}
+We can then write the log-linear first-order conditions for the second
+period as
+\begin{align*} (1 - \gamma) \left( \tau c_T^n + (1 - \tau) c_N^n
+  \right) - c_T^n + \log \tau
+  & = z^n  + q + \lambda^n_{T, 1} \\
+  (1 - \gamma) \left( \tau c_T^n + (1 - \tau) c_N^n \right) - c_N^n +
+  \log(1 - \tau) &= p_N^n + q + \lambda^n_{T, 1},
+\end{align*}
+and the log-linear resource constraints are:
+\begin{align*}
+  c_N^n & =  y_N^n \\
+  \sum_{n = m, t, o} \theta^n c_T^n  & = 0 
+\end{align*}
+where $z^m = \log \left( Z^m(\omega) \right)$ and \(z^t=z^o=0\). Note
+that $\Delta Res$ is a second-order term (linear in $\sigma^n$) and
+consequently does not show up in the log-linear resource constraint.
+This set of ten linear equations (two first order conditions for each
+country and four resource constraints) allows us to solve for the
+endogenous variables
+$\left\{c_N^n, c_T^n, p_N^n \right\}_{n = m, t, o}$ and $q$. Keeping
+in mind the log-linear relationship between each country's output and
+its respective productivity shock (\ref{eqn:prodN}), it is convenient
+to solve for these endogenous variables in terms of each country's
+output $\left\{ y_N^m, y_N^t, y_N^o\right\}$, and the Lagrange
+multipliers
+$\left\{\lambda_{T, 1}^m, \lambda_{T, 1}^t, \lambda_{T, 1}^o
+\right\}$.
+
+Solving the system yields:
+\begin{align*}
+  c_T^m
+  & = \frac{(\gamma - 1)(1 - \tau)}{1 + (\gamma - 1) \tau} \left( \bar{y}_N - y_N^m \right)
+    - \frac{1 - \theta^m}{1 + (\gamma - 1) \tau} z^m
+    + \frac{\bar{\lambda}_{T, 1} - \lambda^m_{T, 1}}{1 + (\gamma - 1) \tau} \\
+  c_T^t
+  & = \frac{(\gamma - 1)(1 - \tau)}{1 + (\gamma - 1) \tau} \left( \bar{y}_N - y_N^t \right)
+    + \frac{\theta^m}{1 + (\gamma - 1) \tau} z^{m}
+    + \frac{\bar{\lambda}_{T, 1} - \lambda^t_{T, 1}}{1 + (\gamma - 1) \tau}  \\
+  c_T^o
+  & = \frac{(\gamma - 1)(1 - \tau)}{1 + (\gamma - 1) \tau} \left( \bar{y}_N - y_N^o \right)
+    + \frac{\theta^m}{1 + (\gamma - 1) \tau} z^{m}
+    + \frac{\bar{\lambda}_{T, 1} - \lambda^o_{T, 1}}{1 + (\gamma - 1) \tau} \\
+  c_N^n
+  & = y_N^n \quad \forall n
+\end{align*}
+where $\bar{\lambda}_{T, 1} = \sum_n \theta^n \lambda^n_{T, 1}$. In
+addition, we have the equilibrium prices:
+\begin{align*}
+  q
+  & = - (1 - \tau)(\gamma - 1) \bar{y}_N - \theta^m z -
+    \bar{\lambda}_{T, 1} \\
+  p_N^m
+  & = \frac{(\gamma - 1)(1 - \tau)}{1 + (\gamma - 1) \tau}
+    \bar{y}_N - \frac{\gamma}{1 + (\gamma - 1) \tau} y_N^m +
+    \frac{\theta^m + (\gamma - 1) \tau}{1 + (\gamma - 1) \tau}
+    z^{m} + \frac{\bar{\lambda}_{T, 1} - \lambda^m_{T, 1}}{1 +
+    (\gamma - 1) \tau}
+    + \log [\frac{1 - \tau}{\tau}] \\
+  p_N^t
+  & = \frac{(\gamma - 1)(1 - \tau)}{1 + (\gamma - 1) \tau}
+    \bar{y}_N - \frac{\gamma}{1 + (\gamma - 1) \tau} y_N^t +
+    \frac{\theta^m}{1 + (\gamma - 1) \tau} z^{m} +
+    \frac{\bar{\lambda}_{T, 1} - \lambda^t_{T, 1}}{1 + (\gamma -
+    1) \tau}
+    + \log [\frac{1 - \tau}{\tau}] \\
+  p_N^o
+  & = \frac{(\gamma - 1)(1 - \tau)}{1 + (\gamma - 1) \tau}
+    \bar{y}_N - \frac{\gamma}{1 + (\gamma - 1) \tau} y_N^o +
+    \frac{\theta^m}{1 + (\gamma - 1) \tau} z^{m} +
+    \frac{\bar{\lambda}_{T, 1} - \lambda^o_{T, 1}}{1 + (\gamma -
+    1) \tau} + \log [\frac{1 - \tau}{\tau}]
+\end{align*}
+It is also useful to keep track of the shadow prices of total
+consumption in each country. To this end, we also use the log-linear
+expression
+$\lambda^n = -\gamma \left( \tau c_T^n + (1 - \tau) c_N^n \right)$
+along with the solutions for traded and nontraded consumption above to
+obtain:
+\begin{align*}
+  \lambda^m & = - \frac{(\gamma - 1)(1 - \tau) \gamma \tau}{1 + (\gamma - 1) \tau} \overline{y}_N
+              - \frac{\gamma (1 - \tau)}{1 + (\gamma - 1) \tau} y_N^m
+              + \frac{\left( 1 - \theta^m \right) \gamma \tau}{1 + (\gamma - 1) \tau} z^{m}
+              - \frac{\gamma \tau \left( \bar{\lambda}_{T, 1} - \lambda^m_{T, 1} \right)}{1 + (\gamma - 1) \tau}\\
+  \lambda^t & = - \frac{(\gamma - 1)(1 - \tau) \gamma \tau}{1 + (\gamma - 1) \tau} \overline{y}_N
+              - \frac{\gamma (1 - \tau)}{1 + (\gamma - 1) \tau} y_N^t
+              + \frac{\theta^m \gamma \tau}{1 + (\gamma - 1) \tau} z^{m}
+              - \frac{\gamma \tau \left( \bar{\lambda}_{T, 1} - \lambda^t_{T, 1} \right)}{1 + (\gamma - 1) \tau}  \\
+  \lambda^o & = - \frac{(\gamma - 1)(1 - \tau) \gamma \tau}{1 + (\gamma - 1) \tau} \overline{y}_N
+              - \frac{\gamma (1 - \tau)}{1 + (\gamma - 1) \tau} y_N^o + 
+              \frac{\theta^m \gamma \tau}{1 + (\gamma - 1) \tau} z^{m}
+              - \frac{\gamma \tau \left( \bar{\lambda}_{T, 1} - \lambda^o_{T, 1} \right)}{1 + (\gamma - 1) \tau} 
+\end{align*}
+
+Finally, the following log-linear equations determine the first-period
+Lagrange multipliers. Again, recall the stabilizing country's
+government uses $\bar{Z}^m$ to add and subtract resources from the
+economy to achieve (P2), which equalizes the marginal utility of
+initial wealth across households. As a result:
+\begin{equation*}
+  \lambda^m_{T, 1} = \lambda^t_{T, 1} = \lambda^o_{T, 1} = \lambda_{T, 1},
+\end{equation*}
+so that the remaining endogenous term drop out of the solutions above,
+\(\bar{\lambda}_{T, 1} - \lambda^m_{T, 1}=0\). Next, we normalize
+$\lambda_{T, 1}$ using the second-order approximation of equation
+\eqref{eqn:norm_lambda}:
+\begin{equation*}
+  \lambda_{T, 1}
+  = \mathbb{E} \left[ \lambda_{T} \right]
+  + \frac{1}{2} var\left[ \lambda_{T} \right].
+\end{equation*}
+
+\subsection{Equilibrium Asset Portfolio
+  \label{Appendix_Decentralization}}
+
+In the log-linear solution, all prices and quantities are a linear
+combination of $\left\{ y_N^m, y_N^t, y_N^o\right\}$. In particular, household
+expenditure, $p^n + c^n$, in each state of the world is a linear
+combination of $\left\{ y_N^m, y_N^t, y_N^o\right\}$. All asset payoffs are also
+linear combinations of $\left\{ y_N^m, y_N^t, y_N^o\right\}$. Any set of assets with
+the same rank as the set of household expenditures will thus be able to span the
+space of household expenditure. Therefore, given the appropriate set of
+assets, we can write household expenditure in each state of the world as a
+linear combination of these assets.
+
+It is straightforward to verify that the set of log-linear stock
+payoffs spans the space of log-linear household wealth.
+\begin{lemma}
+  Households in the freely floating exchange rate equilibrium hold
+  levered positions in their own country's stocks and hold short
+  positions in other countries' stocks,
+  \begin{equation*}
+    A_n^n = \frac{1 - \theta^n \tau}{1 - \tau} \text{ and }
+    A_l^n = - \frac{\theta^n \tau}{1 - \tau} \text{ for } l \neq n
+  \end{equation*}
+  \label{Lemma_AssetPortfolio}
+\end{lemma}
+\begin{proof}
+  The household budget constraint \eqref{eqn:budget_cons_2} can be
+  re-written as:
+  \begin{equation*}
+    P^n(\omega) C^n(\omega)
+    = \sum_{l = m, t, o} A_l^n P^n_N(\omega) Y^n_N(\omega) + Y^n_T
+  \end{equation*}
+  The log-linear approximation of household expenditure of the
+  left-hand side is:
+  \begin{equation*}
+    \frac{1}{\tau} \left( p^n + c^n + \log \left[ \tau \right] \right)
+    = \frac{(\gamma - 1)(1 - \tau)}{\tau \left( 1 - (\gamma - 1) \tau \right)}
+    \left( \bar{y}_N - y^n_N \right) 
+  \end{equation*}
+  The log-linear approximation the stock portfolio payoff (right-hand
+  side) is:
+  \begin{equation*}
+    \sum_{l = m, t, o} A_l^n \frac{1 - \tau}{\tau}
+    \left( p^{l \ast}_N + y^l_N - \log\left[ \frac{1 - \tau}{\tau} \right] \right).
+  \end{equation*}
+  where:
+  \begin{equation*}
+    p^{l \ast}_N + y^l_N
+    = \frac{(\gamma - 1)(1 - \tau)}{1 + (\gamma - 1) \tau }
+    \left( \bar{y}_N - y^l_N \right) 
+    + \log\left[ \frac{1 - \tau}{\tau} \right].
+  \end{equation*}
+  We equate household expenditures in each state of the world with the
+  portfolio payoff:
+  \begin{equation*}
+    \frac{(\gamma - 1)(1 - \tau)}{\left( 1 - (\gamma - 1) \tau \right)}
+    \left( \bar{y}_N - y^n_N \right) 
+    = \sum_{l = m, t, o} A_l^n \frac{1 - \tau}{\tau}
+    \left( p^{l \ast}_N + y^l_N - \log\left[ \frac{1 - \tau}{\tau} \right] \right)
+  \end{equation*}
+  Since this equation holds state-by-state, we solve for the shares,
+  $A^n_l$, by matching the coefficients on $y^l_N$ in the portfolio
+  payoff with the coefficients on $y^l_N$ in household expenditure.
+\end{proof}
+
+
+\subsection{Derivation of Equation
+  \eqref{eq_link_k_r} \label{app_cap}}
+
+To derive (\ref{eq_link_k_r}), we use the following second-order
+approximation of equation (\ref{eqn:FOCK}):
+\begin{equation*}
+  \lambda_{T, 1} + q_K + k^n
+  = \log[\nu] + \mathbb{E}\left[ \lambda_N^n + y_N^n \right]
+  + \frac{1}{2} \text{var}\left( \lambda_N^n + y_N^n \right),
+\end{equation*}
+%$k^n = 0$, $\mathbb{E}[y_N^n] = -\frac{1}{2} \sigma^2_N$ , and $\text{var}[y_N^n] = \sigma_N^2$.
+Next, we substitute
+$\lambda^{n}_{N}=p^{n}_{N}+ \lambda_T$, and take differences across
+two arbitrary countries $f$ and $h$ to obtain:
+\begin{equation}
+  k^f - k^h
+  = \frac{1}{2} \text{var}\left( p_{N}^f + y_{N}^f \right)
+  - \frac{1}{2} \text{var}\left( p_{N}^h + y_{N}^h \right)
+  + \text{cov}\left( p_{N}^f + y_{N}^f - p_{N}^h - y_{N}^h, \lambda_{T}\right).
+  \label{eqn:kspread} 
+\end{equation}
+For any country $n$:
+\begin{equation*}
+  p_{N}^{n*}  + y_{N}^{n*} = 
+  \frac{(1 - \tau)(\gamma - 1)}{1 + (\gamma - 1) \tau}
+  \left( \bar{y}_{N} - y_{N}^n \right).
+\end{equation*}
+Plugging this expression for $p_{N}^{n*} + y_{N}^{n*}$ into the
+right-hand side of equation (\ref{eqn:kspread}) shows:
+\begin{equation*}
+  k^{f*} - k^{h*} = 
+  \frac{(\gamma - 1)^3 (1 - \tau)^2 \tau}{1 + (\gamma - 1) \tau}
+  \left( \theta^f - \theta^h \right)\sigma_N^2. 
+\end{equation*}
+Combine this equation with equation (\ref{eq_FF_UIP}) to derive
+(\ref{eq_link_k_r}),
+
+\subsection{Proof of Lemma
+  \ref{lemma:CostofPeg}
+  \label{Appendix_ProofCostofPeg}}
+
+First, we solve for the state-contingent taxes that implement the real
+exchange rate stabilization. Afterwards, we derive an expression for
+the cost of stabilizing the exchange rate. We guess a tax of the form
+$Z(\omega) = \left( Y_N^m(\omega) / Y_N^t(\omega) \right)^a$
+stabilizes the exchange rate for a constant $a$ and solve for the
+coefficient $a$ that stabilizes the real exchange rate. In logs, this
+tax is: $z = a \left( y_N^t - y_N^m \right)$. We plug this expression
+into the solution of the model derived in Appendix
+\ref{Appendix_Loglinear} and solve for the log real exchange rate:
+\begin{equation*}
+  s^{m, t} = 
+  \frac{\gamma (1 - \tau)}{1 + (\gamma - 1) \tau} \left( y_N^t - y_N^m \right) 
+  + a \frac{\gamma \tau}{1 + (\gamma - 1) \tau} \left( y_N^m - y_N^t \right). 
+\end{equation*}
+Choose $a$ such that $s^{m, t} = (1 - \zeta) s^{m, t \ast}$. This
+yields $a = \zeta (1 - \tau) / \tau$. Finally, we use the expression
+for $s^{f, h \ast}$ given by equation \eqref{eqn:rerNP} to write $z$
+as a function of $p^{m \ast}$ and $p^{t \ast}$.
+
+$\Delta Res$ is defined by equation (\ref{eqn:kappacost}). First, we
+solve for $\bar{Z}$ by plugging in the equilibrium consumption of
+nontraded goods and $K^m = 1$ into the budget constraint
+\eqref{eqn:budget_cons_1}:
+\begin{equation*}
+  \bar{Z}
+  = \left( A^m_m - 1 \right) Q^m_N + \sum_{l \neq m} A^m_l Q^l_N 
+  - \kappa^m.
+\end{equation*}
+Next, multiply equation (\ref{eqn:budget_cons_2}) by the stochastic
+discount factor, $\Lambda_T(\omega) / \Lambda_{T, 1}$, and take
+expectations to derive the present value of tax revenues:
+\begin{align*}
+  &  \mathbb{E}\left[ 
+    \left( \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \right) 
+    \left(Z(\omega) - 1\right) C^m_T(\omega) \right] \\
+  = & \mathbb{E}\left[ 
+      \left( \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \right) 
+      \left( \left( A^m_m - 1 \right) P^m_N(\omega) Y^m_N(\omega) +
+      \sum_{l \neq m} A^m_l P^m_N(\omega) Y^m_N(\omega) + Y^n_T -
+      C^m_T(\omega) \right) \right] \\
+  = & \left( A^m_m - 1 \right) Q^m_N + \sum_{l \neq m} A^m_l Q^l_N + 
+      Y^m_T \mathbb{E} \left[ \left( 
+      \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \right) \right] - 
+      \mathbb{E}\left[ 
+      \left( \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \right) 
+      C^m_T(\omega) \right] 
+\end{align*}
+Finally, we derive $\kappa^m$. In the freely floating exchange rate
+economy, $\bar{Z} = 0$ and $Z(\omega) = 1$. Plug these values into
+equations (\ref{eqn:budget_cons_2}) and (\ref{eqn:budget_cons_1}).
+Finally, we substitute equation \eqref{eqn:norm_lambda} and use the
+fact that $Y^m_T$ is a constant to show:
+\begin{equation}
+  \kappa^m = \mathbb{E}\left[ 
+    \left( \frac{\Lambda^{\ast}_T(\omega)}{\Lambda^{\ast}_{T, 1}} \right) 
+    C_T^{m \ast}(\omega) \right]  - Y^m_T 
+  \label{eqn:defn_kappa}
+\end{equation}
+We plug the expressions for $\bar{Z}$, the present value of tax
+revenues, and $\kappa^m$ in equation \eqref{eqn:kappacost}, and
+simplify to arrive at equation \eqref{eq:kappacost}.
+
+We also derive the portfolio of stocks that exactly finances the
+stabilization policy. This is the portfolio that pays the difference
+between traded consumption when stabilizing and traded consumption in
+the freely floating regime given by equation \eqref{eqn:cTp}. For
+convenience, this equation is repeated here where
+$p^{t \ast} - p^{m \ast}$ is written in terms differences in nontraded
+output:
+\begin{equation*}
+  c^m_T - c^{m \ast}_T
+  = \zeta
+  \frac{(1 - \theta^m)(1 - \tau)}{\tau \left( 1 + (\gamma - 1) \tau \right)}
+  \left( y^t_N - y^m_N \right).
+\end{equation*}
+We use the same log-linear approximation of the stock portfolio as in
+Appendix \ref{Appendix_Decentralization}. Letting $A^m_l$ denote the
+number of shares of country $l$ stock the stabilizing country's
+central bank holds, we get\begin{equation*} A^m_m = \zeta \frac{1 -
+    \theta^m}{\gamma - \zeta (\gamma - 1)(1 - \tau)} \text{, } A^m_t =
+  - A^m_m \text{, } A^m_o = 0.
+\end{equation*}
+
+
+\subsection{Proof of Proposition
+  \ref{prop:KNRBCPeg} \label{Appendix_KNRBCPeg}}
+
+We use the expressions from Appendix \ref{Appendix_Loglinear} to
+calculate $p^t - p^m = \lambda^t - \lambda^m$ and we plug the
+resulting expression into equation \eqref{eq_UIP_RF}:
+\begin{align*}
+  r^m + \Delta \mathbb{E}s^{m, t} - r^t
+  &= \text{cov}\left( \lambda_T, p^t - p^m \right) \\
+  &= \left(r^{m \ast} + \Delta \mathbb{E}s^{m, t \ast} - r^{t \ast} \right)
+    - \zeta \frac{(1 - \tau)^2 \gamma \left( 2 \theta^m (1 - \zeta)
+    + \left( \theta^t - \theta^m \right) (\gamma - 1) \tau \right)}
+    {\tau \left( 1 + (\gamma - 1) \tau \right)} \sigma_N^2.
+\end{align*}
+When the stabilizing country is smaller than the target country,
+$\theta^m < \theta^t$, the right-hand side of this expression implies
+the stabilization decreases the risk-free rate in the stabilizing
+country relative to the risk-free rate in the target country.
+
+We use equation (\ref{eqn:kspread}) to calculate the differential
+incentives to accumulate capital:
+\begin{equation*}
+  k^m - k^t = k^{m \ast} - k^{t \ast} + \zeta 
+  \left( \frac{(\gamma - 1)^2 (1 - \tau)^2\left( (1 - 2 \theta^m)(1 - \zeta) + (\theta^t - \theta^m)(\gamma - 1) \tau \right)}{\left( 1 + (\gamma - 1) \tau \right)^2 } \right) \sigma_N^2.
+\end{equation*}
+The last term of the right-hand side of this expression shows that
+incentives to accumulate capital in the stabilizing country increase
+relative to the target country as long as
+\begin{equation*}
+  \theta^t > \theta^m + \frac{(1 - 2 \theta^m)(1 - \zeta)}{\tau (\gamma - 1)}. 
+\end{equation*}
+Because firms are competitive, wages are given by the marginal product
+of labor.
+$w^n = (1 - \nu) \exp\left( \eta^n \right) \left(K^n\right)^\nu $.
+Since the marginal product of labor rises with the level of capital
+accumulation, the exchange rate stabilization increases wages in the
+stabilizing country relative to all other countries.
+
+Recall, the world-market value of the country $m$ domestic firm given
+by equation \eqref{eqn:FOC_Stock} is:
+\begin{equation*}
+  Q^m_N = \mathbb{E}\left[
+    \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} P^m_N Y^m_N
+  \right].
+\end{equation*}
+The second-order log-linear approximation of the world-market value of
+the country $m$ domestic firm is:
+\begin{equation*}
+  q^m_N 
+  = \mathbb{E} \left[ \lambda_T - \lambda_{T, 1} + p^m_N + y^m_N \right] 
+  + \frac{1}{2} var\left[ \lambda_T - \lambda_{T, 1} + p^m_N + y^m_N \right].
+\end{equation*}
+The spread between the value of the firm in the stabilizing and target
+countries yields the same expression as the right-hand side of
+equation \eqref{eqn:kspread}. Hence, we have already shown the value
+of the firm in the stabilizing country increases relative to the
+target country if $\theta^t$ is large enough.
+
+
+\subsection{Proof of Proposition
+  \ref{prop:CostSmallP} \label{Appendix_CostSmallP}}
+
+Equation (\ref{eq:kappacost}) shows the cost of the stabilization is
+the difference in the value of traded consumption between the freely
+floating regime and stabilized regime. We derive a second-order
+log-linear approximation of the value of traded consumption:
+\begin{equation*}
+  v^m_{T} 
+  = \mathbb{E}\left[ \lambda_T - \lambda_{T, 1} + c_T^m \right]
+  + \frac{1}{2} \text{var} \left[ \lambda_T - \lambda_{T, 1} + c_T^m \right].
+\end{equation*}
+We plug the expressions for $\lambda_T$, $\lambda_{T, 1}$, and $c^m_T$
+into the previous equation in order to derive the change in the log
+value of traded consumption
+\begin{equation*}
+  v^m_T - v_T^{m \ast} = 
+  \frac{\left(\left( \zeta + (\gamma - 1) \tau \right) - 
+      \tau^2 (1 - \gamma)^2 \theta^t \right) (1 - \tau)^2 
+    \zeta \sigma_N^2}{\tau^2 \left( 1 + (\gamma - 1)\tau \right)^2}.
+\end{equation*}
+This expression is decreasing in the size of the target country, and
+becomes negative if and only if the target country is large enough:
+$\theta^t > \left( \zeta + (\gamma - 1) \tau \right) / \left( \tau
+  \left( \gamma - 1 \right) \right)^2$.
+
+Next, we evaluate the derivative of $v^m_T - v_T^{m \ast}$ with
+respect to $\theta^m$ at the point where $\theta^m = 0$:
+\begin{equation*}
+  \left .
+    \frac{\partial (v^m_T - v_T^{m \ast})}{\partial \theta^m}
+  \right \vert_{\theta^m = 0}
+  = \zeta
+  \frac{(\gamma - 1)(1 - \tau)^2\left( \theta^t + 2 \zeta + 2 (1 + \theta^t) (\gamma - 1) \tau \right)}{\tau \left( 1 + (\gamma - 1) \tau \right)^2} \sigma_N^2 > 0
+\end{equation*}
+Hence, the cost of the stabilization increases locally with the size
+of the stabilizing country.
+
+
+\subsection{Proof of Proposition
+  \ref{prop:KNRBCTarget} \label{Appendix_KNRBCTarget}}
+
+We use the expressions from Appendix \ref{Appendix_Loglinear} to
+calculate $p^o - p^t = \lambda^o - \lambda^t$ and we plug the resulting
+expression into equation \eqref{eq_UIP_RF}:
+\begin{equation*}
+  r^t + \Delta \mathbb{E}s^{t, o} - r^o
+  = \text{cov}\left( \lambda_T, p^o - p^t \right)
+  = \left(r^{t \ast} + \Delta \mathbb{E}s^{t, o \ast} - r^{o \ast} \right)
+  + \zeta \frac{\theta^m (1 - \tau)^2 \gamma}{\tau \left( 1 + (\gamma - 1) \tau \right)} \sigma_N^2,
+\end{equation*}
+which implies the exchange rate stabilization increases the risk-free
+rate in the target country relative to the risk-free rate in the
+outside country. 
+
+We use equation (\ref{eqn:kspread}) to calculate the differential
+incentives to accumulate capital,
+\begin{equation*}
+  k^t - k^o = k^{t \ast} - k^{o \ast} -
+  \frac{\theta^m (\gamma - 1)^2 (1 - \tau)^2}{\left( 1 + (\gamma - 1) \tau \right)^2} \zeta \sigma_N^2
+\end{equation*}
+The last term on the right-hand side shows that incentives to
+accumulate capital in the target country decrease relative to the
+outside country.
+
+Because firms are competitive, wages are given by the marginal product
+of labor. Since the marginal product of labor rises with the level of
+capital accumulation, the exchange rate stabilization decreases wages
+in the target country relative to all other countries.
+
+Finally, we show that if the stabilizing country is smaller than the
+target country, $\theta^m < \theta^t$, then the stabilization lowers
+the volatility of consumption in the target country. The log-linear
+approximation of household consumption in the target country is,
+$c^t = \tau c_T^t + (1 - \tau) c_N^t$. We use the expression for
+traded consumption derived in Appendix \ref{Appendix_Loglinear} and
+the expression for the state-contingent tax derived in Appendix
+\ref{Appendix_ProofCostofPeg} to derive the volatility of aggregate
+consumption in the target country:
+\begin{equation*}
+  \text{var} \left( c^t \right)
+  = \text{var} \left( c^{t \ast} \right) 
+  - \zeta \frac{2 \theta^m (1 - \tau)^2 \left( 1 - \theta^m \zeta + \left( \theta^t - \theta^m \right)(\gamma - 1) \tau \right)}{\left( 1 + (\gamma - 1) \tau \right)^2}\sigma_N^2.
+\end{equation*}
+Therefore, $\text{var} \left( c^t \right)$ decreases when a country
+stabilizes its exchange rate relative to the target country as long as
+the stabilizing country is smaller, $\theta^t > \theta^m$.
+
+\section{Appendix to Section \ref{sec_welfare}
+  \label{Appendix_Welfare}}
+
+Households continue to maximize utility subject to their budget
+constraints \eqref{eqn:budget_cons_2} and \eqref{eqn:budget_cons_1}.
+However, when $\Delta Res = 0$ and households hold the portfolio of
+assets derived in Appendix \ref{Appendix_Decentralization}, their
+initial wealth is:
+\begin{equation*}
+  W^n_0
+  = \sum_{l \in \left\{ m, t, o \right\}} A^{n \ast}_l Q^l_N
+  + Q_K K^{n \ast}_N + \bar{Z}. 
+\end{equation*}
+Because $\Delta Res = 0$,
+\begin{equation*}
+  \bar{Z} = \mathbb{E}\left[
+    \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}}
+    \left( Z^n(\omega) - 1 \right) C^n_T(\omega)
+  \right] 
+\end{equation*}
+is just the present value of tax-revenues. To re-iterate,
+$A^{n \ast}_l$ denotes the country $n$ households holding of the
+country $l$ stock in the freely floating exchange rate regime. We plug
+this value of $W^n_0$ into the budget constraint
+\eqref{eqn:budget_cons_1}:
+\begin{equation*}
+  \sum_{l \in \left\{ m, t, o \right\}} A^n_l Q^l_N
+  + Q_K K^{n \ast}_N
+  = \sum_{l \in \left\{ m, t, o \right\}} A^{n \ast}_l Q^l_N
+  + Q_K K^{n \ast}_N + \bar{Z}
+\end{equation*}
+Next, we multiply equation \eqref{eqn:budget_cons_2} by the stochastic
+discount factor and take expectations:
+\begin{align*}
+  \mathbb{E}\left[
+  \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}}
+  \left( Z^n(\omega) C^n_T(\omega) 
+  + P^n_N(\omega) C^n_N(\omega) \right) \right]
+  & = \sum_l \mathbb{E}\left[
+    \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}}
+    \left( A^n_l P^l_N(\omega) Y^l_N(\omega)
+    + Y_T \right) \right] \\
+  & = \sum_{l \in \{m, t, o\}} A^n_l  Q^l_N
+    + \mathbb{E}\left[
+    \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}} Y_T
+    \right] 
+\end{align*}
+We subtract the two equations from each other and re-arrange:
+\begin{equation*}
+  \mathbb{E}\left[
+    \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}}
+    \left( Z^n(\omega) C^n_T(\omega) 
+      + P^n_N(\omega) C^n_N(\omega) \right) \right]
+  = \sum_{l \in \left\{ m, t, o \right\}} A^{n \ast}_l Q^l_N
+  + \bar{Z} + \mathbb{E}\left[
+    \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}} Y_T
+  \right]
+\end{equation*}
+Because households must consume their endowment of non-traded goods,
+we subtract the value of nontraded consumption from both sides. We
+cancel out the present value of tax revenues with the lump sum
+transfer $\bar{Z}$. Finally, we apply equation \eqref{eqn:norm_lambda}
+to arrive at the following expression for the value of traded
+consumption in country $n$:
+\begin{equation}
+  \mathbb{E}\left[
+    \frac{\Lambda^n_T(\omega)}{\Lambda^n_{T, 1}} C^n_T(\omega) 
+  \right]
+  = \left( A^{n \ast}_n - 1 \right) Q^n_N
+  + \sum_{l \neq n} A^{n \ast}_l Q^l_N + Y^n_T.
+  \label{eqn:bc_stocks}
+\end{equation}
+The left-hand side represents the value of traded consumption when
+stabilizing. The right-hand side represents the household's wealth
+from its portfolio of stocks after subtracting out expenditure on
+nontraded consumption and capital investment.
+
+Next, we derive a second-order approximation for equation
+\eqref{eqn:bc_stocks}:
+\begin{equation}
+  \mathbb{E} \left[ \lambda_T - \lambda_{T, 1} + c^n_T \right] +
+  \frac{1}{2} \text {var} \left[ \lambda_T - \lambda_{T, 1} + c^n_T
+  \right] = \frac{1-\tau}{\tau} \left( \left( A^{n \ast}_n - 1 \right)
+    q^n_N + \sum_{l \neq n}A^{l \ast}_t q^t_N \right) + q_T
+  \label{eqn:bc1_peg_nores}
+\end{equation}
+where:
+\begin{equation*}
+  q_N^n = \mathbb{E} \left[ \lambda_T - \lambda_{T, 1} + p^n_N + y^n_N \right]
+  + \frac{1}{2} \text{var} \left[ \lambda_T - \lambda_{T, 1} + p^n_N + y^n_N \right]
+\end{equation*}
+and
+\begin{equation*}
+  q_T^n = 0,
+\end{equation*}
+In keeping with the solution method in Section \ref{sec:real}, we
+solve for the equilibrium valuation change in households' portfolios
+using a second-order approximation around the point at which the
+marginal utility of wealth of households in all countries is
+equalized. Hence, we plug in the expressions for $p^n_N$, $y^n_N$,
+$\lambda_{T}$ and , $\lambda_{T, 1}$ from Section \ref{sec:real} into
+the expressions for $q^n_N$, which appear on the right-hand side of
+equation \eqref{eqn:bc1_peg_nores}. These expressions are given by
+equations \eqref{eqn:pN_yN}, \eqref{eqn:lambdat2} and
+\eqref{eqn:norm_lambda}.
+
+We solve for the Lagrange multiplier $\lambda^n_{T, 1}$ (from the
+left-hand side of equation \eqref{eqn:bc1_peg_nores}) that satisfies
+equation \eqref{eqn:bc1_peg_nores}. We let $\lambda^n_{T, 1, Stock}$
+denote the set of Lagrange multipliers derived from solving equation
+\eqref{eqn:bc1_peg_nores}. After solving the Lagrange multipliers, we
+obtain solutions for traded consumption by plugging the Lagrange
+multipliers, $\lambda^n_{T, 1, Stock}$, into the log-linear
+expressions for $c^n_T$ derived in Appendix \ref{Appendix_Loglinear}.
+These new expressions for traded consumption reflect the level shifts
+in traded consumption due to changes in the value of the household's
+stock portfolio.
+
+We calculate changes in welfare using a second-order approximation of
+household utility:
+\begin{equation}
+  u^n = \frac{1}{1 - \gamma}\log \left[ (1 - \gamma) U^n \right] = 
+  \mathbb{E}[c^n] - \frac{\gamma - 1}{2} \text{var} [c^n]
+  \label{eqn:utility_approx}
+\end{equation}
+where $c^n = \tau c^n_T + (1 - \tau) c^n_N$. We plug in the solutions
+for $c^n_T$, with the Lagrange multipliers derived above, into the
+welfare function. Define the welfare change
+$\Delta u^n = u^n - u^{n \ast}$, where $u^{n \ast}$ is the value of
+$u^n$ when $\zeta = 0$. The welfare change in the stabilizing country
+is:
+\begin{equation*}
+  \begin{split}
+    \Delta u^m & = \frac{ \zeta (\gamma -1)^2 (\theta^m - 1) (\tau
+      -1)^2 \tau ((\gamma -1) \tau (\theta^m - \theta^t) + 1)
+    }{(1 + (\gamma -1) \tau)^2} \sigma_N^2 \\
+    & + \frac{ \zeta^2 (1 - \tau)^2 \left( (\gamma -1) \left(\left(
+            \theta^m \right)^2 - 1\right) \tau + (\gamma - 1)^2
+        (\theta^m - 1) (2 \theta^m - 1) \tau^2 + \theta^m - 1 \right)
+    }{\tau (1 + (\gamma - 1) \tau)^2} \sigma_N^2
+  \end{split}
+\end{equation*}
+Equation \eqref{eq:Deltau} displays the welfare consequences for a
+small stabilizing country $\left( \theta^m = 0 \right)$.
+
+In order to decompose changes in welfare, we also compute traded
+consumption under the assumption there is no valuation effect. In this
+calculation, the household's value of traded consumption post exchange
+rate stabilization exactly equals the value of traded consumption
+prior to the stabilization:
+\begin{equation}
+  \mathbb{E} \left[ \lambda_T - \lambda_{T, 1} + c^n_T \right] +
+  \frac{1}{2} \text {var} \left[ \lambda_T - \lambda_{T, 1} + c^n_T
+  \right]
+  = \mathbb{E} \left[
+    \lambda^{\ast}_T - \lambda^{\ast}_{T, 1} + c^{n \ast}_T
+  \right]
+  + \frac{1}{2} \text {var} \left[
+    \lambda^{\ast}_T - \lambda^{\ast}_{T, 1} + c^{n \ast}_T
+  \right].
+  \label{eqn:bc1_peg_AD}
+\end{equation}
+Denote the Lagrange multipliers derived from solving equation
+\eqref{eqn:bc1_peg_AD} by $\lambda^n_{T, 1, AD}$. Again, we plug these
+the Lagrange multipliers $\lambda^n_{T, 1, AD}$ into the expressions
+from Appendix \ref{Appendix_Loglinear} to derive expressions for
+traded consumption with stabilization, but without any change in the
+total value of traded consumption.
+
+The first term of \eqref{eq:Deltau} is calculated by plugging the
+expression for $c^n_T$ with the Lagrange multipliers
+$\Lambda^n_{T, 1, AD}$ into $c^n$ and deriving the change in
+$\mathbb{E}\left[ c^n \right]$ when $\zeta$ deviates from zero. The
+$\Delta \text{var}\left[ c^m \right]$ term reflects the change
+captured by $\frac{\gamma - 1}{2}\text{var}\left[ c^m \right]$. The
+``Valuation Effect'' is calculated by plugging the expression for
+$c^n_T$ with the Lagrange multipliers $\Lambda^n_{T, 1, Stock}$ into
+$c^n$, deriving the change in $\mathbb{E}\left[ c^n \right]$ when
+$\zeta$ deviates from zero, and then subtracting out the first term of
+\eqref{eq:Deltau}.
+
+When the first term of \eqref{eq:Deltau} is combined with the
+``Valuation Effect'':
+\begin{equation*}
+  \Delta u^m
+  = - \frac{\zeta^2 (1 - \tau)^2 }{
+    \tau \left( 1 + (\gamma - 1) \tau\right)} \sigma_N^2
+  + \frac{ \left( \zeta \Theta^t + \zeta^2 \right)
+    \theta^t \tau (\gamma - 1)^2 (1 - \tau)^2 }{
+    \left( 1 + (\gamma - 1) \tau \right)^2} \sigma_N^2
+\end{equation*}
+The first term on the right-hand side is clearly negative, which
+indicates the welfare losses from the increase in consumption
+volatility are larger than any gains from accumulating reserves.
+
+Finally, equation \eqref{eq:Deltau} can be condensed to:
+\begin{equation*}
+  \Delta u^m = \zeta
+  \frac{(1 - \tau)^2
+    \left( - \zeta \left( 1 + (\gamma - 1) \tau \right) 
+      + (\theta^t (\gamma - 1) \tau - 1 + \zeta)(\gamma - 1)^2 \tau^2 \right)}
+  {\tau \left( 1 + (\gamma - 1) \tau \right)^2} \sigma_N^2.
+\end{equation*}
+The right-hand side of this equation is positive if:
+\begin{equation*}
+  \theta^t
+  > \bar{\theta}
+  = \frac{1 - \zeta}{(\gamma - 1) \tau}
+  + \frac{\zeta (1 + (\gamma - 1) \tau)}{(\gamma - 1)^3 \tau^3}.
+\end{equation*}
+
+
+\subsection{Equilibrium Bond Portfolio
+  \label{Appendix_BondDecentralization}}
+
+Suppose households are confined to trading international risk-free
+bonds rather than stocks. The country $n$ risk-free bond pays
+$P^n(\omega)$ units of the traded good in state $\omega$ of period 2.
+Similar to the exercise in Appendix \ref{Appendix_Decentralization},
+these asset payoffs are linear combinations of the nontraded output in
+each country. Likewise, it is straightforward to verify the set of
+log-linear bond payoffs spans the space of log-linear household
+wealth. As a result, equilibrium outcomes in the economy are
+unaffected by the change in the asset space. We just need to solve for
+the household bond portfolios that pay the appropriate payoff in each
+state in the second period.
+
+Let $B^n_l$ denote the number of country $l$ bonds purchased by
+households in country $n$. Hence, the log-linear approximation of the
+payoff received from the portfolio held by country $n$ households is:
+\begin{equation*}
+  \sum_{l = m, t, o} B_l^n \frac{1}{\tau} p^l
+\end{equation*}
+Again, we solve for the portfolio weights, $B^n_l$, by matching the
+coefficients on $y^l_N$ in the portfolio payoff with the coefficients
+on $y^l_N$ in household expenditure. This procedure yields the
+following result:
+\begin{equation*}
+  B_n^n = \frac{(1 - \theta^n)(\gamma - 1)}{\gamma} \text{ and }
+  B_l^n = - \frac{\theta^l (\gamma - 1)}{\gamma} \text{ for } l \neq n.
+\end{equation*}
+
+Households thus hold levered positions in their domestic risk-free
+bond. Proposition \ref{prop:KNRBCPeg} shows the stabilizing country's
+risk-free rate decreases when the target country is larger than the
+stabilizing country, increasing the relative value of its bonds. As a
+result, the same intuition from Proposition \ref{prop_welfare} shows
+that announcing a stabilization relative to a larger country increases
+the stabilizing country's share of world wealth and thus, by the same
+logic, can increase the welfare of its households.
+
+\subsection{Welfare Consequences in Target and Outside Countries
+  \label{Appendix_Welfare_TO}}
+
+In this appendix, we provide expressions for the welfare consequences
+of stabilization on households in the target and outside countries.
+Analogous to the calculation of $\Delta u^m$, we plug the Lagrange
+multipliers derived in Appendix \ref{Appendix_Welfare} into the
+expression of $c^t_T$ and $c^o_T$ derived in Appendix
+\ref{Appendix_Loglinear}. We again plug the value of $c^t_T$ into the
+second-order approximation of household welfare given by equation
+\eqref{eqn:utility_approx}:
+\begin{equation*}
+  \begin{split}
+    \Delta u^t & = \frac{\zeta^2 \theta^m (1 - \tau)^2 ((\gamma -1)
+      \tau ((\gamma -1) (2 \theta^m - 1) \tau
+      + \theta^m) + 1)}{\tau  (1 + (\gamma -1) \tau)^2} \sigma^2_N \\
+    & + \frac{(\gamma -1) \zeta \theta^m (1 - \tau)^2 ((\gamma -1)
+      \tau ((\gamma -1) \tau (\theta^m - \theta^t) + 1) + 2)}{((\gamma
+      -1) \tau + 1)^2} \sigma^2_N.
+  \end{split}
+\end{equation*}
+The analogous calculation for the outside country yields:
+\begin{equation*} \Delta u^o = \Delta u^t - \frac{\zeta \theta^m
+    (\gamma - 1)(1 - \tau)^2} {\left( 1 + (\gamma - 1) \tau\right)^2}
+  \sigma_N^2.
+\end{equation*}
+Households in the outside country are weakly worse off than households
+in the target country as a result of the stabilization.
+
+\section{Appendix to Section \ref{sec:nominal}}\label{Appendix_Nominal_Rigidities}
+  
+
+\subsection{Sticky Prices of Traded Goods
+  \label{Appendix_RigidPrices}}
+
+In this appendix, we provide additional details about the model setup,
+derive the monetary policy rule that implements an exchange rate
+stabilization, and afterwards, relate the seigniorage from
+stabilization to $-\Delta Res$.
+
+Households enter each period with a fixed quantity of domestic
+currency, and all goods consumed in a given country must be purchased
+using this domestic currency. In the first period, households use
+their currency to purchase stocks. The first period cash-in-advance
+constraint reads:
+\begin{equation*}
+  \tilde{P}^n_T \left( \sum_l A^n_l Q^l_N + Q_K K^n_N \right) \le \tilde M^n_1.
+\end{equation*}
+where $\tilde M^n_1$ is the quantity of currency available to country
+$n$ households in period 1.
+
+Households enter the first period with the monetary value of the claim
+to their firm, $Q_N$, their endowment of capital, $Q_k$, and their
+transfer, $\kappa^n$, as well as any additional money balances the
+central bank injects through open market operations, $\Delta M^n_1$.
+The household's first-period budget constraint can thus be expressed
+as:
+\begin{equation}
+  \tilde{P}^n_T \left( \sum_l A^n_l Q^l_N + Q_K K^n_N \right)
+  \le \tilde{P}^n_T \left( Q^n_N + Q_K + \kappa^n \right) + \Delta M^n_1.
+  \label{eqn:bc_nom_1}
+\end{equation}
+Hence,
+$\tilde M^n_1 = \tilde{P}^n_T \left( Q^n_N + Q_K + \kappa^n \right) +
+\Delta M^n_1$.
+
+In the second period, households face the cash-in-advance constraint:
+\begin{equation*}
+  \tilde{P}^n_T C^n_T(\omega) + \tilde{P}^n_N(\omega) C^n_N(\omega)
+  \le \tilde M_2^n(\omega),
+\end{equation*}
+where $\tilde M_2^n(\omega)$ is the total quantity of currency
+available to country $n$ households in period 2 to purchase
+consumption. Households again enter the second period with the
+monetary payoff from their stock portfolio and any additional money
+balances the central bank injects through open market operations:
+\begin{equation*}
+  \Delta \tilde M^n(\omega)
+  = \tilde{M}^n_2(\omega) - \tilde{P}^n_T
+  \left( \sum_l A^n_l P^l_N(\omega)Y^l_N(\omega) + Y^n_T \right).
+\end{equation*}
+As a result, the household's budget constraint in the second period
+can be expressed as:
+\begin{equation}
+  \tilde{P}^n_T C^n_T(\omega)
+  + \tilde{P}^n_N(\omega) C^n_N(\omega)
+  \le  \tilde{P}^n_T
+  \left( \sum_l A^n_l P^l_N(\omega)Y^l_N(\omega) + Y^n_T \right) +
+  \Delta \tilde M^n(\omega).
+  \label{eqn:bc_nom_2}
+\end{equation}
+
+In the second period, households maximize utility (\ref{eqn:utility})
+subject to (\ref{eqn:bc_nom_2}). Letting $\tilde{\Lambda}^n_T(\omega)$
+denote the Lagrange multiplier on the household's budget constraint,
+the first-order conditions with respect to traded and nontraded
+consumption are:
+\begin{align}
+  \tau \left( C^n(\omega) \right)^{1 - \gamma} \left( C^n_T(\omega) \right)^{-1}
+  & = \tilde{P}^n_T \tilde{\Lambda}^n(\omega) 
+    \label{nomeqn:FOCT} \\
+  (1 - \tau) \left( C^n(\omega) \right)^{1 - \gamma} \left( C^n_N(\omega) \right)^{-1}
+  & = \tilde{P}^n_N(\omega) \tilde{\Lambda}^n(\omega) 
+    \label{nomeqn:FOCN}
+\end{align}
+Because households exhibit Cobb-Douglas utility, they spend a fraction
+$\tau$ of their wealth on the traded good, and a fraction $1 - \tau$
+of their wealth on the nontraded good:
+\begin{align}
+  C^n_T(\omega)
+  &= \tau \frac{\tilde{M}^n_2(\omega)}{\tilde{P}^n_T} 
+    \label{nomeqn:CT_share} \\
+  C^n_N(\omega)
+  &= (1 - \tau) \frac{\tilde{M}^n_2(\omega)}{\tilde{P}^n_N(\omega)}. 
+    \label{nomeqn:CN_share}
+\end{align}
+Since the price of the traded good is fixed, equation
+\eqref{nomeqn:CT_share} immediately shows that monetary policy
+determines the consumption of traded goods in each country. With the
+consumption of the nontraded goods being determined by the capital
+stock and the exogenous productivity shock, central banks are able to
+neutralize the monetary friction and can therefore replicate the
+freely floating allocation in the baseline model.
+
+Next, we derive the monetary policy that stabilizes exchange rates. In
+equilibrium, households must consume their country's endowment of
+nontraded goods. Hence, equation \eqref{nomeqn:CN_share} shows the
+nominal price of the nontraded good can be written as a function of
+the money supply and the nontraded endowment:
+\begin{equation}
+  \tilde{P}^n_N(\omega) = (1 - \tau) \tilde{M}^n_2(\omega) / Y^n_N(\omega).
+  \label{nomeqn:PN}
+\end{equation}
+We plug equation \eqref{nomeqn:PN} into \eqref{nomeqn:FOCN} to derive
+traded consumption as a function of $\tilde{M}_2^n(\omega)$,
+$Y^n_N(\omega)$ and $\tilde{\Lambda}^n(\omega)$:
+\begin{equation}
+  C^n_T(\omega) 
+  = \tau^{\frac{1}{\tau (1 - \gamma)}} \left( 1 - \tau \right)^{\frac{1}{\tau (\gamma - 1)}}
+  Y^n_N(\omega)^{\frac{1 - \tau}{\tau}} 
+  \tilde{M}^n_2(\omega)^{\frac{1}{\tau (1 - \gamma)}}
+  \tilde{\Lambda}^n(\omega)^{\frac{1}{\tau (1 - \gamma)}}.
+  \label{nomeqn:CT}
+\end{equation}
+Next, we plug \eqref{nomeqn:CT} into \eqref{nomeqn:FOCT} to derive a
+relationship between $\tilde{P}^n_T$, $\tilde{M}^n_2(\omega)$ and
+$\tilde{\Lambda}^n(\omega)$:
+\begin{equation}
+  \tilde{P}^n_T =
+  \tau^{2 + \frac{1}{\tau (\gamma - 1)}} (1 - \tau)^{-1 - \frac{1}{\tau (\gamma - 1)}}
+  Y^n_N(\omega)^{- \frac{(1 - \tau)(1 + 2 \tau (\gamma - 1))}{\tau}}
+  \tilde{M}^n_2(\omega)^{1 + \frac{1}{\tau (\gamma - 1)}}
+  \tilde{\Lambda}^n(\omega)^{\frac{1}{\tau (\gamma - 1)}}.
+  \label{nomeqn:PT}
+\end{equation}
+
+\begin{prop}
+  The central banks of the target and outside countries float their
+  exchange rates by choosing $M^n_2(\omega) $ to neutralize the
+  monetary friction in their countries
+  \begin{equation}
+    M^n_2(\omega) = (1 - \tau) \tau^{-2 + \frac{1}{1 + \tau (\gamma - 1)}}
+    Y^n_N(\omega)^{-1 + 2 \tau + \gamma \left( 2 (1 - \tau) - \frac{1}{1 + \tau (\gamma - 1)} \right)}
+    \left(\Lambda_T(\omega) \right)^{- \frac{1}{1 + \tau(\gamma - 1)}}.
+    \label{nomeqn:M}
+  \end{equation}
+  The central bank of the stabilizing country stabilizes its real and
+  nominal exchange rate by setting monetary policy according to:
+  \begin{equation}
+    M^m_2(\omega) = (1 - \tau) \tau^{-2 + \frac{1}{1 + \tau (\gamma - 1)}}
+    Y^m_N(\omega)^{-1 + 2 \tau + \gamma \left( 2 (1 - \tau) - \frac{1}{1 + \tau (\gamma - 1)} \right)}
+    \left( Z(\omega)\Lambda_T(\omega) \right)^{- \frac{1}{1 + \tau(\gamma - 1)}},
+    \label{nomeqn:Mm}
+  \end{equation}
+  where $Z(\omega)$ is the state-contigent tax and $\Lambda_T(\omega)$
+  is the shadow price of traded consumption from baseline model in
+  section \ref{sec:real}. The equilibrium allocation then coincides
+  exactly with the equilibrium allocation under stabilized exchange
+  rates in the baseline model in section \ref{sec:real}. If the
+  central bank in the stabilizing country instead also behaves
+  according to (\ref{nomeqn:M}), the equilibrium allocation coincides
+  with the equilibrum under freely floating exchange rates in section
+  \ref{sec:real}.\end{prop}
+
+\begin{proof}
+  Plugging \eqref{nomeqn:Mm} into \eqref{nomeqn:PT} and solving for
+  $Z(\omega) \Lambda_T(\omega)$ yields:
+  \begin{equation*}
+    Z(\omega) \Lambda_T(\omega) = \tilde{\Lambda}^m(\omega) \tilde{P}^m_T.
+  \end{equation*}
+  Moreover, plugging \eqref{nomeqn:M} into \eqref{nomeqn:PT} and
+  solving for $\Lambda_T(\omega)$ yields:
+  \begin{equation*}
+    \Lambda_T(\omega) = \tilde{\Lambda}^n(\omega) \tilde{P}^n_T \text{ for } n = t, o.
+  \end{equation*}
+  Hence, the first-order conditions \eqref{nomeqn:FOCT} and
+  \eqref{nomeqn:FOCN} coincide with the shadow prices of traded and
+  nontraded consumption from Appendix \ref{Appendix_ModelDetails}. As
+  a result, the allocation of goods must also be the same.
+\end{proof}
+
+Equation \eqref{nomeqn:Mm} shows that when the target country
+appreciates (i.e. states of the world in which
+$Z(\omega)\Lambda_T(\omega)$ is high), the stabilizing country's
+central bank contracts its money supply to match the appreciation.
+Another way to show this policy is to take the log difference in the
+stabilizing country's monetary policy between the stabilizing regime,
+$M^m_2(\omega)$ and the freely floating regime (when we replace
+$Z(\omega)\Lambda_T(\omega)$ with $\Lambda_T^\ast(\omega)$):
+\begin{equation*}
+  m^m_2 - m^{m \ast}_2
+  = - \frac{1}{1 + \tau(\gamma - 1)} (z + \lambda_T - \lambda_T^\ast).
+\end{equation*}
+We plug in the expressions for $z$ and $\lambda_T - \lambda_T^\ast$
+given by Lemma \ref{lemma:CostofPeg} and equation \eqref{eqn:lambdat2}
+to show:
+\begin{equation*}
+  m^m_2 - m^{m \ast}_2
+  = - \frac{\zeta (1 - \theta^m)}{\gamma \tau}
+  \left( p^{t \ast} - p^{m \ast} \right).
+\end{equation*}
+
+Next, we derive an expression for seigniorage and show the value of
+seigniorage accruing to the central bank is equal to $-\Delta Res$,
+which is given by equation \eqref{eq:kappacost}. The net present value
+of seigniorage is:
+\begin{equation*}
+  \text{seigniorage} = 
+  - \left(\frac{\Delta \tilde{M}^n_1 }{\tilde{P}^n_T}\right)
+  - \mathbb{E}\left[ \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} 
+    \left(\frac{\Delta \tilde{M}^n(\omega)}{\tilde{P}^n_T}\right)
+  \right],
+\end{equation*}
+where $\Delta \tilde M^n_1$ and $\Delta \tilde M^n(\omega)$ are given
+by the budget constraints \eqref{eqn:bc_nom_1} and
+\eqref{eqn:bc_nom_2}. Equation \eqref{eqn:bc_nom_2} shows:
+\begin{align*}
+  \frac{\Delta \tilde{M}^n(\omega)}{\tilde{P}^n_T}
+  & = C^n_T(\omega) + P^l_N(\omega) C^n_N(\omega)
+    - \sum_l A^n_l P^l_N(\omega) Y^l_N(\omega) -  Y^n_T \\
+  & = C^n_T(\omega) - \left( A^n_n - 1 \right) P^l_N(\omega) Y^n_N(\omega)
+    - \sum_{l \neq n} A^n_l P^l_N(\omega) Y^l_N(\omega) - Y^n_T.
+\end{align*}
+The second equality comes from plugging in the equilibrium condition
+$C^n_N = Y^n_N$. We multiply this result with the stochastic discount
+factor, $\Lambda_T(\omega) / \Lambda_{T, 1}$, and take expectations:
+\begin{equation*}
+  \mathbb{E}\left[ 
+    \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}}
+    \left( \frac{\Delta \tilde{M}^n(\omega)}{\tilde{P}^n_T} \right)
+  \right] = \mathbb{E}\left[ 
+    \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} C^n_T(\omega) 
+  \right] - \left( A^n_n - 1 \right) Q^n_N - \sum_{l \neq n} A^n_l Q^l_N -
+  Y^n_T \mathbb{E}\left[ \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \right].
+\end{equation*}
+Equation \eqref{eqn:bc_nom_1} shows:
+\begin{align*}
+  \frac{\Delta \tilde{M}^n_1}{\tilde{P}^n_T}
+  & = \sum_l A^n_l Q^l_N + Q_K - Q^n_N - Q_K - \kappa^n   \\
+  & = \left( A^n_n - 1 \right) Q^n_N + \sum_{l \neq n} A^n_l Q^l_N - \kappa^n. 
+\end{align*}
+Combining the two previous expressions yields:
+\begin{equation*}
+  \left(\frac{\Delta \tilde{M}^n_1}{\tilde{P}^n_T}\right) + 
+  \mathbb{E}\left[  
+    \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}}
+    \left( \frac{\Delta \tilde{M}^n(\omega)}{\tilde{P}^n_T} \right)
+  \right] =
+  \mathbb{E}\left[ \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} C^n_T(\omega) \right]
+  -  Y^n_T \mathbb{E}\left[\frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \right]
+  - \kappa^n.   
+\end{equation*}
+We plug in the definition of $\kappa^m$ given by equation
+\eqref{eqn:defn_kappa} to show:
+\begin{align*}
+  \text{seigniorage}
+  & = - \left(\frac{\Delta \tilde{M}^n_1}{\tilde{P}^n_T}\right) - 
+    \mathbb{E}\left[  
+    \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}}
+    \left( \frac{\Delta \tilde{M}^n(\omega)}{\tilde{P}^n_T} \right)
+    \right] \\
+  & = \mathbb{E}\left[ \frac{\Lambda^{\ast}_T(\omega)}{\Lambda^{\ast}_{T, 1}}
+    C^{n \ast}_T(\omega) \right]
+    - \mathbb{E}\left[ \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} 
+    C^n_T(\omega) \right] 
+  \\
+  & = - \Delta Res.
+\end{align*}
+
+\subsection{Extension: Sticky Prices of the Final Consumption Good
+  \label{Appendix_RigidCPI}}
+
+This appendix analyzes an extension of the baseline model in section
+\ref{sec:real} in which the price of the final consumption bundle is
+sticky, rather than the price of the traded good. Similar to appendix
+\ref{Appendix_RigidPrices}, central bank policies can exactly
+replicate the equilibrium allocation in the baseline model.
+
+We assume there now exists a firm in each country that produces the
+final consumption good according to a Cobb-Douglas production
+technology:
+\begin{equation*}
+  Y^n(\omega)
+  = \left( C^n_T(\omega) \right)^\tau
+  \left( C^n_N(\omega) \right)^{1 - \tau}
+\end{equation*}
+We assume this price of the final consumption good is sticky,
+$\tilde{P}^n(\omega) = 1$. Hence, the final good firm takes the demand
+for the final consumption good and solves the following
+cost-minimization problem:
+\begin{equation*}
+  \min \tilde P^n_T(\omega) C^n_T(\omega) + \tilde P^n_N(\omega) C^n_N(\omega)
+  \text{ s.t. }
+  \left( C^n_T(\omega) \right)^{\tau} \left( C^n_N(\omega) \right)^{1 - \tau} =
+  Y^n(\omega).
+\end{equation*}
+The solution of this cost minimization problem determines the quantity
+of traded and non-traded goods the firm purchases to produce final
+consumption goods:
+\begin{equation}
+  C^n_T(\omega) = \left( \frac{\tau}{1 - \tau}
+    \frac{\tilde{P}^n_N(\omega)}{\tilde{P}^n_T(\omega)}
+  \right)^{1- \tau} Y^n(\omega), \quad
+  C^n_N = \left( \frac{1 - \tau}{\tau}
+    \frac{\tilde{P}^n_T(\omega)}{\tilde{P}^n_N(\omega)}
+  \right)^{\tau} Y^n(\omega),
+  \label{nomeqn:firm_soln}
+\end{equation}
+which also relates the price of the traded and nontraded goods to the
+price of the final consumption good:
+\begin{equation*}
+  \tilde{P}^n(\omega)
+  = \tilde{P}^n_T(\omega) C^n_T(\omega) + \tilde{P}^n_N(\omega) C^n_N(\omega)
+  = \frac{\left(  \tilde{P}^n_T(\omega) \right)^{\tau}
+    \left(  \tilde{P}^n_N(\omega) \right)^{1 - \tau}}{\tau^\tau
+    (1 - \tau)^{1 - \tau}}.
+\end{equation*}
+As a result, we can write the nominal price of the traded good as a
+function of the nominal price of the nontraded good:
+\begin{equation}
+  \tilde{P}^n_{T}(\omega)
+  = \tau (1 - \tau)^{\frac{1 - \tau}{\tau}}
+  \tilde{P}^n_N(\omega)^{ - \frac{1 - \tau}{\tau}}
+  \label{cpieqn:PT}
+\end{equation}
+
+Households continue to exhibit utility \eqref{eqn:utility} over
+consumption of the final consumption good, $C^n(\omega)$. Just as in
+Appendix \ref{Appendix_RigidPrices}, households enter each period with
+a fixed quantity of the domestic currency, and all goods consumed in a
+given country must be purchased using the domestic currency. In the
+first period, households use their currency to purchase stocks. They
+continue to face the budget constraint given by equation
+\eqref{eqn:bc_nom_1}. In the second period, households face the
+cash-in-advance constraint:
+\begin{equation}
+  \tilde{P}^n C^n(\omega) \le \tilde M^n(\omega)
+  \label{eqn:bc_nom_cpi_2}, 
+\end{equation}
+where
+$\tilde M^n(\omega) = \tilde{P}^n_T \left( \sum_l A^n_l
+  P^l_N(\omega)Y^l_N(\omega) + Y^n_T \right) + \Delta \tilde
+M^n(\omega)$ is the total quantity of domestic currency each country
+$n$ household can use in the second period to purchase consumption
+goods.
+
+Since the price of the final consumption good is fixed, equation
+\eqref{eqn:bc_nom_cpi_2} and market clearing of the final consumption
+good implies:
+\begin{equation}
+  Y^n(\omega) = \tilde M^n(\omega).
+  \label{eqn:mktclr_C}
+\end{equation}
+Hence, equations \eqref{cpieqn:CT}, \eqref{nomeqn:firm_soln},
+\eqref{eqn:mktclr_C} and market clearing in nontraded goods allow us
+to write $\tilde{P}^n_N(\omega)$ as a function of monetary policy:
+\begin{equation}
+  \tilde{P}^n_N(\omega) = (1 - \tau)
+  \tilde{M}^n(\omega) / Y^n_N(\omega).
+  \label{nomeqn:PN_alt}
+\end{equation}
+Plugging \eqref{nomeqn:PN_alt} into the expression for $C^n_T(\omega)$
+in \eqref{nomeqn:firm_soln} shows:
+\begin{equation}
+  C^n_T(\omega)
+  = \left( Y^n_N(\omega) \right)^{- \frac{1 - \tau}{\tau}}
+  \tilde{M}^n(\omega)^{\frac{1}{\tau}}.
+  \label{cpieqn:CT}
+\end{equation}
+Equation \eqref{cpieqn:CT} shows changes in the money supply directly
+determine the purchases of traded goods in each of the countries.
+Hence, the central banks in each of the countries can engage in
+monetary policies that directly replicate the equilibrium in the
+baseline model in section \ref{sec:real}.
+
+When the target country appreciates, equation \eqref{cpieqn:CT} shows
+that the stabilizing country's central bank would decrease
+$\tilde M^n(\omega)$ to decrease domestic consumption of traded goods
+and match the appreciation in the target country. Hence, in this
+extension where the price of the entire domestic consumption bundle is
+sticky, the central bank implements a stabilizion by following the
+same rule of contracting the domestic money supply whenever the target
+country appreciates.
+
+Moreover, the budget constraints in this appendix are exactly the same
+as those in Appendix \ref{Appendix_RigidPrices}. Only the location of
+the nominal rigidity has changed. As a result, the derivation of
+seigniorage accruing to the central bank is exactly the same as in
+Appendix \ref{Appendix_RigidPrices}. Hence, the present value of the
+seigniorage from stabilization is still equal to $-\Delta Res$.
+
+
+\subsection{Extension: Segmented Markets and Cash-In-Advance
+  Constraint\label{Appendix_CIA}}
+
+This appendix analyzes an alternative monetary friction where prices
+are flexible and monetary policy affects real allocations because
+financial markets are segmented \citep{AlvarezAtkesonKehoe2002}.
+Again, the key takeaway from this exercise is that, even with this
+alternate type of monetary friction, a simple nominal stabilization
+can implement a real stabilization of the type discussed in Section
+\ref{sec:real} of the main text. We will show that when the target
+country appreciates, the stabilizing country's central bank matches
+the appreciation by contracting the domestic money supply. Finally, we
+show the seigniorage from stabilization remains equal to $-\Delta Res$
+under this alternative monetary friction.
+
+Each country has a central bank that issues a national currency. All
+goods must be paid for in the domestic currency of the country from
+which they originate. All households face a cash-in-advance
+constraint, and all prices are flexible. Within each country, only a
+fraction $\phi$ of households can trade in the international stock
+market, label these households `active.' The remaining $1- \phi$ of
+households do not have access to financial markets. The central banks
+in the target and outside countries use their control of the money
+supply to recover the efficient allocation of resources, taking as
+given the actions of the stabilizing country's central bank. By
+contrast, the central bank in the stabilizing country uses its control
+of monetary policy to stabilize the nominal exchange rate.
+
+In the second period, the cash-in-advance constraint for active
+households is:
+\begin{equation}
+  \tilde{P}^n_T(\omega) C^n_T(\omega) + \tilde{P}^n_N(\omega) C^n_N(\omega) 
+  \le \tilde{M}^n_1 + \tilde{P}^n_T(\omega) 
+  \left( \sum_l A_l^n P_N^l(\omega) Y_N^l(\omega) + Y_T^n \right).
+  \label{eqn:seg_bc}
+\end{equation}
+where $\tilde{P}_T^n$ is the nominal price of the traded good in
+country $n$ and $\tilde{M}^n_1$ is the nominal money holding of the
+active household in terms of the national currency of its home country
+$n$ that is carried over from the first period. Since inactive
+households do not have access to financial markets, their cash in
+advance constraint in period 2 is:
+\begin{equation*}
+  \tilde{P}^n_T(\omega) \hat{C}^n_T(\omega) + \tilde{P}^n_N(\omega) \hat{C}^n_N(\omega)
+  \le \hat{M}^n_1,
+\end{equation*}
+where $\hat{M}^n_1$ is the cash holding of an inactive households
+carried over from the first period. All households within a given
+country start the first period with identical cash holdings,
+$\tilde{M}^n_0$. The first-period constraint for active households is
+\begin{equation}
+  \tilde{M}^n_1 + \tilde{P}^n_{T, 1} 
+  \left( \sum_l A^n_l Q^l_N + Q_K K^n_N \right) \le
+  \tilde{P}^n_{T, 1} \left( Q^n_N + Q_K + \kappa^n \right) + \tilde{M}^n_0,
+  \label{eqn:seg_bc1}
+\end{equation}
+and the first-period constraint for inactive households is
+\begin{equation*}
+  \hat{M}^n_1
+  \le \tilde{P}^n_{T, 1} \left( Q^n_N + Q_K + \hat{\kappa}^n \right)
+  + \hat{M}^n_0.
+\end{equation*}
+
+The assumption that all goods must be paid for in the domestic
+currency from which they originate implies the money market clearing
+condition:
+\begin{equation}
+  \tilde{P}^n_T(\omega) Y^n_T + \tilde{P}^n_N(\omega) Y^n_N = \bar{M}^n(\omega)
+  \label{eqn:rc_money}
+\end{equation}
+where $\bar{M}^n = \phi \tilde{M}^n + (1 - \phi) \hat{M}^n$ is the
+aggregate money supply in country $n$. The central bank changes the
+monetary base in the second period through open market operations in
+the stock market:
+\begin{equation}
+  \phi \tilde{P}^n_T(\omega) 
+  \left( \sum_l A_l^n P_N^l(\omega) Y_N^l(\omega) + Y_T^n \right) 
+  = \bar{M}^n_2 - \bar{M}^n_1 
+  = \phi \left( \tilde{M}^n_2 - \tilde{M}^n_1 \right). 
+  \label{eqn:seg_policy} 
+\end{equation}
+
+Inactive households split their supply of money between traded and
+nontraded goods. Their consumption is:
+\begin{equation*}
+  \hat{C}^n_T (\omega) = \tau \frac{\hat{M}^n_1}{\tilde{P}^n_T(\omega)}
+  \text{, and }
+  \hat{C}^n_N (\omega) = (1 - \tau) \frac{\hat{M}^n_1}{\tilde{P}^n_N(\omega)}.
+\end{equation*}
+Because prices are flexible, changes in the money supply affect the
+equilibrium allocation in this economy only because it affects the
+real purchasing power of these inactive households. That is, the
+central bank can affect the allocation by increasing or decreasing the
+purchasing power of these households. Define the shock to the real
+purchasing power of inactive households in country $n$, controlled by
+country \(n\)'s central bank as \begin{equation} \exp(-\mu^n) =
+  \frac{1}{P^n(\omega)} \frac{\hat{M}^n_1}{\tilde{P}^n_T(\omega)},
+  \label{eqn:def_mu}
+\end{equation}
+so that a high \(\mu\) corresponds to an expansionary monetary policy,
+higher inflation, and lower purchasing power of inactive households.
+
+
+Given this definition, the consumption of inactive households can be
+re-written as:
+\begin{equation*}
+  \hat{C}^n_T (\omega)
+  = \tau \exp(-\mu^n) P^n(\omega)
+  \text{, and }
+  \hat{C}^n_N (\omega)
+  = (1 - \tau) \exp(-\mu^n) P^n(\omega)
+  \frac{\tilde{P}^n_T(\omega)}{\tilde{P}^n_N(\omega)}
+\end{equation*}
+
+
+\iffalse By combining equation \eqref{eqn:def_mu} with equation
+\eqref{eqn:seg_bc1}, we can express the country-level budget
+constraint for country $n$ as:
+\begin{equation*}
+  \int \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}}
+  \left( P^n(\omega)C^n(\omega) + \frac{1 - \phi}{\phi} \exp(-\mu) P^n(\omega) \right)
+  g(\omega) d\omega 
+  = \frac{1}{\phi} \left( Q_N + Q_k + \kappa^n  + \frac{\tilde{M}^n_0}{\tilde{P}^n_{T,1}}\right).
+\end{equation*}
+\fi
+
+Active households maximize their expected utility subject to their
+budget constraints \eqref{eqn:seg_bc} and \eqref{eqn:seg_bc1}, as well
+as the consumption of inactive households. We derive first-order
+conditions and log-linearize around the deterministic equilibrium. The
+real exchange rate between the stabilizing country and target country
+is:
+\begin{equation*}
+  s^{p, t}
+  = \frac{\gamma (1 - \tau)}{\gamma \tau + \phi (1 - \tau)}
+  \left( y^t_N - y^p_N \right)
+  + \frac{\gamma (1 - \tau)(1 - \phi) }{\gamma \tau + \phi (1 - \tau)}
+  \left( \mu^t - \mu^p \right)
+\end{equation*}
+A positive \(\mu^n\) (high inflation) shifts resources to the active
+households in country \(n\) and depreciates the stabilizing country's
+real exchange rate.
+
+The real exchange rate under the freely floating regime is:
+\begin{equation*}
+  s^{m, t \ast} 
+  = \frac{\gamma (1 - \tau)}{\gamma \tau + \phi (1 - \tau)}
+  \left( y^t_N - y^m_N \right)
+\end{equation*}
+and the variance of this exchange rate is:
+\begin{equation*}
+  \text{var}\left[ s^{m, t \ast} \right]
+  = \frac{2 \gamma^2 (1 - \tau)^2}{\left( \gamma \tau + \phi (1 - \tau) \right)^2}
+  \sigma_N^2
+\end{equation*}
+The stabilizing country imposes a real exchange rate stabilization of
+strength $\zeta$ by choosing:
+\begin{align}
+  \mu^m
+  & = \zeta \frac{1}{1 - \phi} \left( y^t_N - y^m_N \right) \notag \\
+  & = \zeta \frac{\gamma \tau + \phi (1 - \tau)}{\gamma (1 - \tau)(1 - \phi)}
+    \left( p^{m \ast}  - p^{t \ast} \right) 
+\end{align}
+
+The previous equation shows that when the target country appreciates,
+the stabilizing country lowers its own inflation rate (i.e. contracts)
+to match the appreciation in the target country. Under this
+alternative form of monetary friction, lower inflation shifts
+resources from the active household towards the inactive household,
+which increases the marginal utility of active households and thus
+appreciates the real price level in the stabilizing country.
+
+We show this result formally by explicitly solving for the monetary
+policy that enforces a nominal exchange rate stabilization. The
+nominal exchange rate in this economy is equal to the real exchange
+rate plus inflation:
+\begin{equation*}
+  \tilde{s}^{m, t} = p^m + \mu^m - p^t - \mu^t
+\end{equation*}
+$\mu^t =\mu^o= 0$ by assumption. However, the nominal exchange rate is
+affected by monetary policy through $\mu^m$. We solve for the monetary
+policy that implements a nominal exchange rate stabilization of
+strength $\tilde \zeta$:
+\begin{align}
+  \mu^m
+  & = \frac{\tilde \zeta \gamma (1 - \tau)}{\gamma (1 - \phi)(1 - \tau)
+    - (\gamma \tau + (1 - \tau) \phi)}
+    \left( y^t_N - y^m_N \right). \\
+  & =\frac{\tilde \zeta \left( \gamma \tau + \phi (1 - \tau) \right)}
+    {\gamma (1 - \phi)(1 - \tau) - (\gamma \tau + (1 - \tau) \phi)}
+    \left( p^{m \ast} - p^{t \ast} \right)
+\end{align}
+Under this policy, the stabilizing country's real exchange rate is:
+\begin{align*}
+  s^{m, t}
+  & = \left(
+    1 - \frac{\tilde{\zeta} \gamma (1 - \tau)(1 - \phi)}
+    {\gamma (1 - \phi)(1 - \tau) - (\gamma \tau + (1 - \tau) \phi)}
+    \right)
+    s^{m, t \ast} 
+\end{align*}
+Hence, a policy that implements a nominal stabilization of strength of
+$\tilde{\zeta}$ will implement a real stabilization of strength:
+\begin{equation*}
+  \zeta =\tilde{\zeta} \frac{\gamma (1 - \tau)(1 - \phi)}
+  {\gamma (1 - \phi)(1 - \tau) - (\gamma \tau + (1 - \tau) \phi)} 
+\end{equation*}
+If $\gamma (1 - \phi)(1 - \tau) > (\gamma \tau + (1 - \tau) \phi)$,
+then a nominal stabilization implements a stronger real stabilization.
+
+Seigniorage is a function of the present discounted value of the
+change in the money supply in both periods:
+\begin{equation*}
+  \text{seigniorage}
+  = - \frac{\bar{M}^n_1 - \bar{M}^n_0}{\tilde{P}^n_{T, 1}}
+  - \mathbb{E}\left[ \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}}
+    \left( \frac{\bar{M}^n_2(\omega) - \bar{M}^n_1}{\tilde{P}^n_T(\omega)} \right)\right].
+\end{equation*}
+Following the same calculations as in Appendix
+\ref{Appendix_RigidPrices}, we can show:
+\begin{align*}
+  \text{seigniorage}
+  & = \mathbb{E}\left[
+    \left( \frac{\Lambda^{\ast}_T(\omega)}{\Lambda^{\ast}_{T, 1}} \right)
+    \left( \phi C^{m \ast}_T(\omega) + (1 - \phi) \hat{C}^{m \ast}_T(\omega) \right)
+    \right] \\
+  & \quad \quad - \mathbb{E}\left[
+    \left( \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \right)
+    \left( \phi C^m_T(\omega) + (1 - \phi) \hat{C}^m_T(\omega) \right)
+    \right]
+\end{align*}
+where asterisks denote an equilibrium in which the stabilizing country
+does not actively manipulate the variance of the exchange rate. In the
+segmented markets model, seigniorage is still equal to change in the
+value of traded consumption ($-\Delta Res$). However, seigniorage in
+the segmented markets model takes into account the consumption of both
+active and inactive households.
+
+
+\section{Model Extensions}
+
+\subsection{Partial exchange rate stabilization
+  \label{app:partstab}}
+
+This appendix formalizes the effects of partial exchange rate
+stabilization. In a first step, we use the partition defined in the main text to write the
+variance of exchange rates in the freely floating regime as
+\begin{equation}
+  \begin{split}
+    \text{var}[s^{\ast m,t}] &= \int_{\Omega} \left(s^{\ast m,t}-
+      \mathbb{E}[s^{\ast m,t}|\{K_n\}]\right)^2g(\omega) d\omega
+    \\
+    &= \int_{\Omega_s} \left(s^{\ast m,t}-\mathbb{E}[s^{\ast m,t}|\{K_n\}]\right)^2 g(\omega)d\omega+\int_{\Omega_{-s}} \left(s^{\ast m,t}-\mathbb{E}[s^{\ast m,t}|\{K_n\}]\right)^2g(\omega)d\omega\\
+    &=\text{Prob}\left[\omega\in\Omega_s\right]
+    \text{var}\left[s^{\ast
+        m,t}|\Omega_s\right]+\text{Prob}\left[\omega\in\Omega_{-s}\right]
+    \text{var}\left[s^{\ast m,t}|\Omega_{-s}\right]
+  \end{split}
+\end{equation}
+since the conditional means in the two subregions of the state space
+are identical. By the same token, partial stabilization delivers a
+variance of the exchange rate of
+\begin{equation}
+  \begin{split}
+    \text{var}[s^{m,t}]&= \text{Prob}\left[\omega\in\Omega_s\right] \text{var}\left[s^{m,t}|\Omega_s\right]+\text{Prob}\left[\omega\in\Omega_{-s}\right] \text{var}\left[s^{m,t}|\Omega_{-s}\right]\\
+    &=\text{Prob}\left[\omega\in\Omega_s\right] \text{var}\left[(1-\zeta)(s^{\ast m,t}-\mathbb{E}[s^{\ast m,t}|\{K_n\}])|\Omega_s\right]+\text{Prob}\left[\omega\in\Omega_{-s}\right] \text{var}\left[s^{\ast m,t}|\Omega_{-s}\right]\\
+    &=\text{Prob}\left[\omega\in\Omega_s\right] (1-\zeta)^2\text{var}\left[s^{\ast m,t}|\Omega_s\right]+\text{Prob}\left[\omega\in\Omega_{-s}\right] \text{var}\left[s^{\ast m,t}|\Omega_{-s}\right]\\
+    &<\text{var}\left[s^{\ast m,t}\right].
+  \end{split}
+\end{equation}
+
+With exchange rate stabilization of strength $\zeta$, the interest
+rate differential given by equation (\ref{eq_UIP_RF}) becomes
+\begin{equation*}
+  \begin{split}
+    r^m+ \Delta \mathbb{E}[s^{m,t}]-r^t&=-\text{cov}\left[\lambda_T,s^{m,t}\right]\\
+    &=-\text{cov}\left[\lambda_T,(1-\zeta)s^{\ast m,t}\right]\\
+    &=-(1-\zeta)\text{cov}\left[\lambda_T,s^{\ast m,t}\right].
+  \end{split}
+\end{equation*}
+The effects of partial stabilization for interest rate differentials
+work in the same direction. Again using the fact that the conditional
+means are identical in the two subregions, we decompose the covariance into the following
+terms:
+\begin{equation*}
+  \small
+  \begin{split}
+    r^m+ \Delta
+    \mathbb{E}[s^{m,t}]-r^t&=-\text{cov}\left[\lambda_T,s^{m,t}\right]
+    = -\int_{\Omega} \left(\lambda_T - \mathbb{E}\left[\lambda_T|\{K_n\}\right]\right) \left(s^{m,t}-\mathbb{E}\left[s^{m,t}|\{K_n\}\right]\right)g(\omega)d\omega\\
+    &= -\text{Prob}\left[\omega\in\Omega_s\right] \int_{\Omega_s} \left(\lambda_T - \mathbb{E}\left[\lambda_T|\{K_n\}\right]\right) \left(s^{m,t}-\mathbb{E}[s^{m,t}|\{K_n\}]\right)g_s(\omega)d\omega\\
+    &\quad -\text{Prob}\left[\omega\in\Omega_{-s}\right] \int_{\Omega_{-s}}\left(\lambda_T - \mathbb{E}\left[\lambda_T|\{K_n\}\right]\right) \left(s^{m,t}-\mathbb{E}[s^{m,t}|\{K_n\}]\right)g_{-s}(\omega)d\omega\\
+    &= -\text{Prob}\left[\omega\in\Omega_s\right] \int_{\Omega_s} \left(\lambda_T - \mathbb{E}\left[\lambda_T|\Omega_s,\{K_n\}\right]\right) \left(s^{m,t}-\mathbb{E}[s^{m,t}|\{K_n\}]\right)g_s(\omega)d\omega\\
+    &\quad -\text{Prob}\left[\omega\in\Omega_s\right] \left(
+      \mathbb{E}\left[\lambda_T|\Omega_s,\{K_n\}\right]-\mathbb{E}\left[\lambda_T|
+        \{K_n\}\right]\right) \int_{\Omega_s} \left(s^{m,t}-\mathbb{E}[s^{m,t}|\{K_n\}]\right)g_s(\omega)d\omega\\
+    &\quad -\text{Prob}\left[\omega\in\Omega_{-s}\right] \int_{\Omega_{-s}} \left(\lambda_T - \mathbb{E}\left[\lambda_T|\Omega_{-s},\{K_n\}\right]\right) \left(s^{m,t}-\mathbb{E}[s^{m,t}|\{K_n\}]\right)g_{-s}(\omega)d\omega\\
+    &\quad -\text{Prob}\left[\omega\in\Omega_{-s}\right] \left(
+      \mathbb{E}\left[\lambda_T|\Omega_{-s},\{K_n\}\right]-\mathbb{E}\left[\lambda_T|
+        \{K_n\}\right]\right) \int_{\Omega_{-s}} \left(s^{m,t}-\mathbb{E}[s^{m,t}|\{K_n\}]\right)g_{-s}(\omega)d\omega\\
+    &= -\text{Prob}\left[\omega\in\Omega_s\right] \int_{\Omega_s} \left(\lambda_T - \mathbb{E}\left[\lambda_T|\Omega_s,\{K_n\}\right]\right) \left(s^{m,t}-\mathbb{E}[s^{m,t}|\{K_n\}]\right)g_s(\omega)d\omega\\
+    &\quad -\text{Prob}\left[\omega\in\Omega_{-s}\right] \int_{\Omega_{-s}} \left(\lambda_T - \mathbb{E}\left[\lambda_T|\Omega_{-s},\{K_n\}\right]\right) \left(s^{m,t}-\mathbb{E}[s^{m,t}|\{K_n\}]\right)g_{-s}(\omega)d\omega\\
+    &= -\text{Prob}\left[\omega\in\Omega_s\right]
+    \text{cov}\left[\lambda_T,s^{m,t}|\Omega_s\right]-\text{Prob}\left[\omega\in\Omega_{-s}\right]
+    \text{cov}\left[\lambda_T,s^{m,t}|\Omega_{-s}\right],
+  \end{split}
+\end{equation*}
+where $g_s(\omega) = \dfrac{g(\omega)}{\text{Prob}\left[\omega\in\Omega_s\right]}$ and $g_{-s}(\omega) = \dfrac{g(\omega)}{\text{Prob}\left[\omega\in\Omega_{-s}\right]}$. The second-to-last step follows from the fact that the conditional means are identical and thus $\mathbb{E}\left[s^{m,t}-\mathbb{E}\left[s^{m,t}|\{K_n\}\right]|\Omega_s \right] = 0$.\\
+With partial exchange rate stabilization, we get
+\begin{equation*}
+  \begin{split}
+    r^m+ \Delta \mathbb{E}[s^{m,t}]-r^t&=-\text{cov}\left[\lambda_T,s^{m,t}\right]\\
+    &= -\text{Prob}\left[\omega\in\Omega_s\right] \text{cov}\left[\lambda_T,s^{m,t}|\Omega_s\right]-\text{Prob}\left[\omega\in\Omega_{-s}\right] \text{cov}\left[\lambda_T,s^{m,t}|\Omega_{-s}\right]\\
+    &= -\text{Prob}\left[\omega\in\Omega_s\right]
+    (1-\zeta)\text{cov}\left[\lambda_T,s^{\ast m,t}|\Omega_s\right]
+    -\text{Prob}\left[\omega\in\Omega_{-s}\right]
+    \text{cov}\left[\lambda_T,s^{\ast m,t}|\Omega_{-s}\right].
+  \end{split}
+\end{equation*}
+Rearranging the last equation to
+\begin{equation*}
+  r^m+\Delta \mathbb{E}[s^{m,t}]-r^t=-\text{cov}\left[\lambda_T,s^{m,t}\right]=  -\text{cov}\left[\lambda_T,s^{\ast m,t}\right] +\zeta \text{Prob}\left[\omega\in\Omega_s\right]\text{cov}\left[\lambda_T,s^{\ast m,t}|\Omega_s\right],
+\end{equation*}
+we see that the effects of partial stabilization are a milder version
+of currency stabilization discussed previously. In fact, partial
+stabilization of strength $\zeta$ in a subset of the state space
+corresponds to currency stabilization of strength
+$\zeta
+\text{Prob}\left[\omega\in\Omega_s\right]\text{cov}\left[\lambda_T,s^{\ast
+    m,t}|\Omega_s\right]$.
+
+\subsection{Stabilization Relative to a Basket of
+  Currencies\label{Appendix_baskets}}
+
+Our analysis above also extends directly to stabilizations relative to
+a basket of currencies. Consider a country that wishes to stabilize
+its real exchange rate with the basket
+\begin{equation*}
+  p^b = (1 - w) p^t + w p^o
+\end{equation*}
+where $w$ is the basket's weight on the outside country and $1 - w$
+the weight on the target country. Using (\ref{eq_UIP_RF}), it is then
+easy to show that stabilizing relative to a basket of currencies has
+effects akin to a stabilization relative to a (hypothetical) country
+with a weighted average size of the basket's constituents:
+\begin{equation*}
+  r^m + \Delta\mathbb{E} s^{m,o} - r^o =  
+  \left(r^{t \ast} + \Delta\mathbb{E}s^{t, o \ast} - r^{o \ast} \right) - \zeta \frac{\gamma (1 - \tau)^2 \left( (\bar{\theta} - \theta^m) (\gamma - 1) \tau + \theta^m (2 - w - 2 \bar{w} \zeta) \right)}{\tau \left( 1 + (\gamma - 1) \tau \right)} \sigma_N^2
+\end{equation*}
+where $\bar{\theta} = w \theta^t + (1 - w) \theta^o$ is the weighted
+average size of the basket's constituents and
+$\bar{w} = 1 - (1 - w) w$ is a positive constant less than one.
+
+Although clearly a less effective means of lowering domestic interest
+rates than stabilizations relative to the largest economy in the
+world, stabilizing relative to a basket may be appealing for some
+countries, because it reduces price impact. When stabilizing relative
+to a basket, the stabilizing country's exports are less sensitive to
+shocks affecting only one of the two other countries, decreasing the
+volatility of its exports and thus lowering the stabilization's impact
+on world-market prices. For a large country, stabilizing relative to a
+basket may thus be cheaper to implement than stabilizing relative to
+the largest economy in the world.
+
+
+\subsection{Feedback between Risk Premia and Capital
+  Accumulation \label{Appendix_EndogenousCapital}}
+
+
+In this appendix, we show Propositions \ref{prop:KNRBCPeg} through
+\ref{prop:KNRBCTarget} continue to hold when we solve explicitly for
+the feedback between risk premia and capital accumulation. First, note
+that changes in the level of capital accumulation affect the expected
+level of consumption, but not the conditional covariance of
+consumption across countries in our log-linear solution. It follows
+immediately that all statements in Propositions \ref{prop:KNRBCPeg}
+through \ref{prop:KNRBCTarget} that depend on the covariances between
+asset payoffs and the shadow price of traded goods are unchanged. That
+is, all statements regarding interest differentials, expected currency
+returns, and the world-market value of domestic firms continue to
+hold.
+
+Second, to show that all statements in Propositions
+\ref{prop:KNRBCPeg} through \ref{prop:KNRBCTarget} pertaining to the
+capital stock itself continue to hold when we solve explicitly for the
+feedback between risk premia and capital accumulation. To this end, we
+use the second-order approximation of the Euler equation for capital
+accumulation \eqref{eqn:FOCK}:
+\begin{equation*}
+  \lambda_{T, 1}  + q_K + k^n
+  = \log[\nu] + \mathbb{E}\left[ \lambda_N^n + y_N^n \right]
+  + \frac{1}{2} \text{var}\left[ \lambda_N^n + y_N^n \right] \quad \forall n,
+\end{equation*}
+and the log-linear resource constraint for capital:
+\begin{equation*}
+  0 = \sum_n \theta^n k^n.
+\end{equation*}
+We plug in the expression for
+$\lambda_N^n = p^n_N + q + \lambda^n_{T, 1}$ from Appendix
+\ref{Appendix_Loglinear} to write $\lambda_N^n$ as a function of
+$y_N^n$, and then we plug in $y_N^n = \eta + \nu k^n$ to write the
+$y_N^n$ as a function of the capital stock and the productivity shock.
+We solve this system of four equations for $k^m, k^t, k^o$ and $q_K$.
+
+In a freely floating exchange rate economy $(\zeta = 0)$, we find
+\begin{equation*}
+  k^{m \ast} - k^{t \ast} = 
+  \frac{(\gamma - 1)^3 (1 - \tau)^2 \tau}{\left( 1 + (\gamma - 1) \tau \right) \left( 1 + (\gamma - 1) (1 - \tau) \nu + (\gamma - 1) \tau \right)} 
+  \left( \theta^m - \theta^t \right) \sigma_N^2. 
+\end{equation*}
+Comparing this expression with $k^m - k^t$ derived from solving the
+system of four equations above shows that allowing for feedback
+between risk premia and capital accumulation merely reduces the size
+of the difference in capital accumulation by a constant factor smaller
+than one, leaving the economic insights of our analysis unaffected.
+
+The same is true for the equivalent expression under stabilized
+exchange rates, though this factor is too large to reproduce in print.
+For the special case of \(\zeta=1\), we can show
+\begin{equation*}
+  \left( k^m - k^t \vert_{\zeta = 1} \right) = k^{m \ast} - k^{t \ast} + 
+  \frac{(\gamma - 1)^3 (1 - \tau)^2 \tau \left( \theta^t - \theta^m \right) \sigma_N^2}{\left( 1 + (\gamma - 1) \tau \right) \left( 1 + (\gamma - 1) (1 - \tau) \nu + (\gamma - 1) \tau \right)} 
+  = 0.
+\end{equation*}
+
+
+
+\section{Appendix to Section \ref{sec:full_model}}
+
+In this appendix, we provide additional details about the model in
+section \ref{sec:full_model} and formally derive its equilibrium
+conditions. To avoid solving the optimization problem
+separately for households in the stabilizing country and households in
+the rest of the world, we generalize the notation to allow all
+countries to impose state-contingent taxes, $Z^n(\omega)$, and provide
+lump sum transfers, $\bar{Z}^n$. The governments in the target and
+outside countries do not use these instruments, such that
+$Z^t(\omega)=Z^o(\omega) = 1$ and $\bar{Z}^t =\bar{Z}^o= 0$.
+
+\subsection{Equilibrium Consumption
+  \label{Appendix_Inactive} \label{Appendix_Active}}
+
+Inactive households in country $n$ maximize utility, defined in
+equation (\ref{eqn:utility_gen}), in each state of the world by
+splitting their wealth $\exp(-\mu^n) P^n(\omega)$ optimally between
+traded and nontraded consumption,
+\begin{align*}
+  \max_{\hat{C}_T^n\left( \omega \right), \hat{C}_N^n\left( \omega\right)}
+  & \frac{1}{1 - \gamma}  
+    \left(\exp\left( \chi^n\right) \left( \hat{C}_T^n \left( \omega \right) \right)^{\tau} 
+    \left( \hat{ C }_N^n\left( \omega \right) \right)^{1 - \tau} \right)^{1 - \gamma} \\
+  \text{ s.t. }
+  & \hat{C}_T^n ( \omega ) + P^n_{N}(\omega) \hat{C}_N^n ( \omega ) \le 
+    \exp(-\mu^n)P^n(\omega), \notag
+\end{align*}
+where hats indicate consumption by inactive households. We solve this
+problem by setting up a Lagrangian and taking first-order conditions
+with respect to $\hat{C}_T^n( \omega )$ and $\hat{C}_N^n ( \omega )$.
+Inactive households then optimally consume the following bundle of
+traded and nontraded goods,
+\begin{equation*}
+  \hat{C}_{T}^n(\omega) = \exp (- \mu^n) \tau P^n(\omega) \text{, }  \quad
+  \hat{C}_{N}^n(\omega) = \exp ( - \mu^n) \frac{(1 - \tau)P^n(\omega) }{P_{N}^n(\omega) }.
+\end{equation*}
+
+Active households own all the productive assets within the country and
+are short the nominal bonds owned by inactive households. They
+maximize their utility (\ref{eqn:utility_gen}) subject to their
+intertemporal budget constraint:
+\begin{align}
+  & \mathbb{E}\left[ \frac{\Lambda_T (\omega)}{\Lambda_{T, 1}} \left(
+    Z^n(\omega) C^n_T(\omega) + P^n_N(\omega) C^n_N(\omega)
+    + \frac{1 - \phi}{\phi} P^n(\omega) e^{- \mu^n}
+    \right) \right] \label{eqn:bc_peg_full}  \\
+  & \le \frac{1}{\phi} \left( Q_K - Q_K K^n
+    + \mathbb{E}\left[ \frac{\Lambda_T (\omega)}{\Lambda_{T, 1}}
+    \left( P^n_N(\omega) Y^n_N + Y^n_T \right) \right] +
+    \kappa^n  + \bar{Z}^n \right), \notag
+\end{align}
+where $(1 - \phi) / \phi$ is the number of inactive households per
+active household in each country and endowments are adjusted by a
+factor $1 / \phi$ because active households now own proportionally
+more productive assets per capita; \(\kappa^n \) again denotes the
+transfer that decentralizes the allocation corresponding to the social
+planner's problem with unit Pareto weights under freely floating
+exchange rates. In the stabilizing country, the government use the
+lump-sum transfer, $\bar{Z}^m$, to equalize the marginal utility of
+wealth between the stabilizing country and the rest of the world
+(\ref{eqn:P2}).
+
+The first-order conditions of the active households' problem are:
+\begin{align}
+  \frac{\tau \exp( (1 - \gamma) \chi^n) \left( C^n \right)^{1 - \gamma} \left( C_T^n \right)^{-1}}{Z^n(\omega)}
+  &= \Lambda_{T, 1} Q(\omega) \label{eqn:FOCCT_full_gen}\\ 
+  (1 - \tau) \exp( (1 - \gamma) \chi^n) \left( C^n \right)^{1 - \gamma} \left( C_N^n \right)^{-1}
+  &= \Lambda_{T, 1} Q(\omega) P_N^n(\omega) \label{eqn:FOCCN_full_gen}.
+\end{align}
+Analogous to Appendix \eqref{Appendix_Loglinear}, we find it
+convenient to denote the stochastic discout factor with
+$Q(\omega) = \Lambda_T(\omega) / \Lambda_{T, 1}$. The first-order
+condition with respect to capital accumulation is
+\begin{equation}
+  Q_K  = \mathbb{E} \left[
+    \frac{\Lambda_T (\omega)}{\Lambda_{T, 1}}
+    P_N^n(\omega) e^{\eta^n} \nu \left( K^n \right)^{\nu - 1} 
+  \right].
+  \label{eqn:FOCK_full_gen}
+\end{equation}
+
+\subsection{Log-linearized System of
+  Equations \label{Appendix_Loglinear_FullModel}}
+
+We next derive log-linearized first-order conditions. Equation
+(\ref{eqn:RCT}) defines the resource constraint for traded goods.
+Equation (\ref{eqn:RCN}) defines the (three) resource constraints for
+nontraded goods in each country, and equation (\ref{eqn:RCK}) defines
+the resource constraint for capital goods. Equations
+(\ref{eqn:FOCCT_full_gen}) and (\ref{eqn:FOCCN_full_gen}) define the
+three first-order conditions with respect to traded consumption and
+the three first-order conditions with respect to nontraded
+consumption. Equation (\ref{eqn:FOCK_full_gen}) defines the three
+Euler equations for capital investment in each country. In total, we
+derive a system of 14 equations. To study the model in closed form, we
+again log-linearize around the deterministic solution --- the point at
+which the variances of shocks are zero
+$\left( \sigma_{N, n} = 0 \right)$ and all firms have a capital stock
+fixed at the deterministic steady-state level. To simplify the
+exposition, we thus again ignore the feedback effect of differential
+capital accumulation on the size of risk premia, studying the
+\textit{incentives} to accumulate different levels of capital across
+countries, while holding the capital stock fixed. The log-linear
+first-order conditions are:
+\begin{align*}
+  (1 - \gamma) \chi^n + (1 - \gamma) \left( \tau c_T^n + (1 - \tau) c_N^n \right) - c_T^n + 
+  \log \tau &= z^n + q + \lambda_{T, 1} \\
+  (1 - \gamma) \chi^n + (1 - \gamma) \left( \tau c_T^n + (1 - \tau) c_N^n \right) - c_N^n + 
+  \log(1 -  \tau) &= p^n_N + q + \lambda_{T, 1}.
+\end{align*}
+Similar to Appendix \ref{Appendix_ModelDetails}, let
+$q = \lambda_T - \lambda_{T, 1}$ denote the stochastic discount
+factor. Also recall that the transfes
+\(\{\kappa^n\},\bar{Z}^m$ equalize the first-period Lagrange
+multiplier $\lambda_{T,
+  1}$ across active households in all countries. The log-linear
+approximation of equation (\ref{eqn:FOCK_full_gen}) is:
+\begin{equation*}
+  \lambda_{T, 1} + q_K + k^n
+  = \log[\nu] + \mathbb{E}\left[ \lambda_N^n + y_N^n \right]
+  + \frac{1}{2} \text{var}\left( \lambda_N^n + y_N^n \right).
+\end{equation*}
+The log-linear resource constraints are:
+\begin{align*}
+  \phi c_N^n + (1 - \phi) \left( - \mu^n - \tau \left( \lambda_N^n - \lambda_T - \log\left( \frac{1 - \tau}{\tau} \right) \right) \right) & = \eta^n + \nu k^n = y_N^n,\\ 
+  \sum_{n = m, t, o} \theta^n \left[ \phi c_T^n + (1 - \phi) \left( - \mu^n - (1 - \tau) \left( \lambda_N^n - \lambda_T - \log\left( \frac{1 - \tau}{\tau} \right) \right) \right) \right] & = \sum_{n = m, t, o} \theta^n y_{T, 1}^n = 1, \\
+  \sum_{n = m, t, o} \theta^n k^n &= 1.
+\end{align*}
+This set of fourteen equations allows us to solve for the following
+fourteen unknowns
+$\left\{k^n, c_N^n, c_T^n, \lambda_N^n \right\}_{n = m, t,
+  o}$, $\lambda_{T, 1}$ and $q$.
+
+\subsection{Cost of Stabilization
+  \label{Appendix_ProofCostofPeg_FullModel}}
+
+First, we solve for the state-contingent taxes that implement the real
+exchange rate stabilization in the model in section
+\ref{sec:full_model}, and then we derive an expression for the cost of
+the peg. Throughout, we can recover the results in Appendix
+\ref{Appendix_ProofCostofPeg} by removing the market segmentation
+($\phi = 1$), by setting the monetary shocks to zero ($\mu^n = 0$) and
+by setting the preference shocks to zero ($\chi^n = 0$).
+
+Analogous to Appendix \ref{Appendix_ProofCostofPeg}, we search for a
+state-contingent tax of the form
+\begin{equation*}
+  Z(\omega) = \left( \frac{Y_N^m}{Y_N^t} \right)^{a_1}
+  \left( \frac{\exp \left( -\mu^t \right)}{\exp \left( -\mu^m \right)}\right)^{a_2} 
+  \left( \frac{\exp \left( \chi^m \right)}{\exp \left( \chi^t \right)} \right)^{a_3}.
+\end{equation*}
+In logs, this state-contingent tax is
+\begin{equation*}
+  z = a_1 \left( y_N^t - y_N^m \right) + a_2 \left( -\mu^t + \mu^m \right) +
+  a_3 \left( \chi^t - \chi^m \right).
+\end{equation*}
+We follow the procedure from Appendix \ref{Appendix_ProofCostofPeg} to
+derive the coefficients $a_1, a_2$ and $a_3$ that stabilize the
+exchange rate. The following lemma summarizes these results.
+\begin{lemma}
+  In the model in section \ref{sec:full_model}, where real exchange
+  rates fluctuate in response to monetary shocks, preference shocks,
+  and productivity shocks, a tax on the consumption of traded goods in
+  the stabilizing country of the form
+  \begin{equation*}
+    z(\omega) = 
+    \frac{\zeta (1 - \tau)}{\tau \left( \tau + \phi (1 - \tau) \right)}
+    \left( y_N^m - y_N^t\right) + 
+    \frac{(1 - \tau)(1 - \phi)}{\tau \left( \tau + \phi (1 - \tau) \right)}
+    \left( \mu^m - \mu^t \right) + 
+    \frac{(\gamma - 1)(1 - \tau) \phi}{\gamma \tau \left( \tau + \phi (1 - \tau) \right)}
+    \left( \chi^m - \chi^t \right)
+  \end{equation*}
+  implements a real exchange rate stabilization of strength $\zeta$.
+\end{lemma}
+
+Next, we derive the cost of the stabilization. We start with the
+budget constraint of the active household in the stabilizing country
+given by equation (\ref{eqn:bc_peg_full}), and we identify the
+components of the lump-sum transfer, $\bar{Z}$. Following the same
+calculations as in Appendix \ref{Appendix_ProofCostofPeg}, we show:
+\begin{equation}
+  \begin{split}
+    \Delta Res & = \mathbb{E}\left[
+      \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \left( \phi
+        C_T^m(\omega) + (1 - \phi) \hat{C}_T^m(\omega) \right)
+    \right] \\
+    & \quad \quad - \mathbb{E}\left[
+      \frac{\Lambda_T(\omega)}{\Lambda_{T, 1}} \left( \phi C_T^{m
+          \ast}(\omega) + (1 - \phi) \hat{C}_T^{m \ast}(\omega)
+      \right) \right]
+  \end{split}
+  \label{eqn:delta_res_full}
+\end{equation}
+In the model in section \ref{sec:full_model}, the cost of
+stabilization is thus the change in the value of the stabilizing
+country's total consumption of traded goods by active and inactive
+households.
+
+
+\subsection{Proof of Proposition \ref{prop:FullModelResults}
+  \label{Appendix_FullModelProof}}
+
+We first prove results for the internal effects of a real exchange
+rate stabilization. We plug the log-linear expressions derived from
+solving the system of equations in Appendix
+\ref{Appendix_Loglinear_FullModel} into equation (\ref{eq_UIP_RF}). We
+can then write the interest rate differential between the stabilizing
+country and the target as
+\begin{align*}
+  r^m + \Delta \mathbb{E}s^{m, t} - r^t =
+  & \left(r^{m \ast} + \Delta \mathbb{E}s^{m, t \ast} - r^{t \ast} \right) -
+    \zeta \frac{\gamma (1 - \tau)^2\left( (\theta^t - \theta^m) \tau (\gamma - \phi) + 2 \phi \theta^m (1 - \zeta) \right)}{\tau \phi \left( \gamma \tau + (1 - \tau) \phi \right)} \sigma_N^2 \\
+  & - \zeta \frac{\gamma (1 - \tau)(1 - \phi)^2\left( (\theta^t - \theta^m) \gamma \tau + 2 \phi \theta^m (1 - \zeta) (1 - \tau) \right)}{\tau \phi \left( \gamma \tau + (1 - \tau) \phi \right)} \tilde{\sigma}^2 \\
+  & - \zeta \frac{\phi (1 - \tau)(1 - \gamma)^2\left( (\theta^t - \theta^m) \gamma \tau + 2 \phi \theta^m (1 - \zeta) (1 - \tau) \right)}{\tau \gamma \left( \gamma \tau + (1 - \tau) \phi \right)} \sigma_{\chi}^2,
+\end{align*}
+which implies the exchange rate stabilization decreases the risk-free
+rate in the stabilizing country relative to the risk-free rate in the
+target country if the target country is larger than the stabilizing
+country, $\theta^t > \theta^m$.
+
+Plugging in the log-linear expressions for $p^m_N$, $p^t_N$, and
+$\lambda_T$ into equation \eqref{eqn:kspread}, we again find that the
+relative incentives to accumulate capital in the stabilizing country
+increase with the size of the target country. Because the closed-form
+solution equivalent to the one above is too large to print, it is
+easier to prove this statement by showing that relative incentives to
+accumulate capital increase linearly in \(\theta^t\):
+\begin{align*}
+  \frac{d}{d \theta^t}
+  & \left[ \left( k^m - k^t \right) - \left( k^{m \ast} - k^{t \ast} \right) \right]
+    = \frac{\zeta (\gamma - 1) (1 - \tau)^2 \tau (\gamma - \phi)^2}{\left( \phi + (1 - \phi) \tau \right)\left( \gamma \tau + (1 - \tau) \phi \right)}\sigma_N^2 \\
+  & + \frac{\zeta (\gamma - 1) \gamma (1 - \tau) \tau (\gamma - \phi) (1 - \phi)^2}{\left( \phi + (1 - \phi) \tau \right)\left( \gamma \tau + (1 - \tau) \phi \right)}\tilde{\sigma}^2 
+    + \frac{\zeta (\gamma - 1)^3 (1 - \tau) \tau (\gamma - \phi) \phi^2}{\gamma \left( \phi + (1 - \phi) \tau \right)\left( \gamma \tau + (1 - \tau) \phi \right)} \sigma_{\chi}^2 > 0. 
+\end{align*}
+It follows immediately that there exists some $\theta_{min}>0$ such
+that stabilizing the real exchange rate relative to any country larger
+than $\theta_{min}$ will increase the incentives to accumulate capital
+in the stabilizing country. Analogous to Appendix
+\ref{Appendix_KNRBCPeg}, the spread between the value of the firm in
+the stabilizing and target countries yields the same expression as the
+right-hand side of equation \eqref{eqn:kspread}. Hence, we have
+already shown the value of the firm in the stabilizing country
+increases relative to the target country if $\theta^t$ is large
+enough.
+
+Because firms are competitive, wages are given by the marginal product
+of labor. Hence, an exchange rate stabilization relative to a
+sufficiently large target country increases wages in the stabilizing
+country relative to all other countries, concluding the proof of the
+first statement in Proposition \ref{prop:FullModelResults}.
+
+Next, we derive the cost of stabilization. We calculate changes in the
+log value of traded consumption in the stabilizing country given by
+\eqref{eqn:delta_res_full}. The log-linear approximation of the total
+traded consumption in the stabilizing country from active and inactive
+households is: $\phi c_T^{m} + (1 - \phi) \hat{c}_T^m$. We calculate:
+\begin{equation*}
+  \log \Delta Res = v_T - v^\ast_T,
+\end{equation*}
+where we use the following second-order approximation of the log value
+of total traded consumption:
+\begin{equation*}
+  v_T = \mathbb{E}\left[ \lambda_T - \psi_T + \phi c_T^{m} + (1 - \phi) \hat{c}_T^m  \right]
+  + \frac{1}{2} \text{var}\left[ \lambda_T - \psi_T + \phi c_T^{m} + (1 - \phi) \hat{c}_T^m \right]
+\end{equation*}
+When the stabilizing country is small ($\theta^m = 0$), the cost of
+the stabilization decreases as the target country gets larger:
+\begin{align*}
+  \frac{d}{d \theta^t}\left( v_T - v_T^{\ast} \right) = -
+  & \zeta \frac{(1 - \tau)(1 - \phi)^2 (\gamma - \phi)}{\left( \phi + (\gamma - \phi) \tau\right)^2 }\tilde{\sigma}^2 
+    - \zeta \frac{(1 - \tau)^2 (\gamma - \phi)^2}{\left(\phi + (\gamma - \phi) \tau\right)^2} \sigma_N^2 \\  
+  & - \zeta \frac{(\gamma - 1)^2 (1 - \tau)(\gamma - \phi) \phi^2}{\gamma \left( \phi + (\gamma - \phi) \tau \right)^2} \sigma_{\chi}^2 < 0.
+\end{align*}
+Hence, it is cheaper to stabilize relative to a larger country.
+
+Finally, we prove results for the external effects of a real exchange
+rate stabilization. Using equation (\ref{eq_UIP_RF}) and the solution
+of the model from Appendix \ref{Appendix_Loglinear_FullModel}, we can
+write interest rate differential between the target country and the
+outside country as
+\begin{align*}
+  r^t + \Delta \mathbb{E}s^{t, o} - r^o =
+  & \left(r^{t \ast} + \Delta \mathbb{E}s^{t, o \ast} - r^{o \ast} \right) + 
+    \frac{\zeta \theta^m \gamma (1 - \tau)^2 }{\tau \left( \gamma \tau + \phi (1 - \tau) \right)} \sigma_N^2 
+    + \frac{\zeta \theta^m \gamma (1 - \tau)^2 (1 - \phi)^2}{\tau \left( \gamma \tau + \phi (1 - \tau) \right)} \tilde{\sigma}^2 \\
+  & + \frac{\theta^m \zeta (\gamma - 1)^2 (1 - \tau)^2 \phi^2}{\gamma \tau \left( \gamma \tau + (1 - \tau) \phi \right)}\sigma_\chi^2,
+\end{align*}
+which implies the exchange rate stabilization increases the risk-free
+rate in the target country relative to the risk-free rate in the
+outside country.
+
+We plug the log-linear expressions for $p^t_N$, $p^o_N$ and
+$\lambda_T$ into \eqref{eqn:kspread} to derive the differential
+incentive to accumulate capital in the target country relative to the
+outside countries:
+\begin{align*}
+  k^t - k^o =
+  & k^{t \ast} - k^{o \ast} 
+    - \frac{\theta^m \zeta (1 - \tau)^2 (\gamma - \phi)^2}{\left( \gamma \tau + (1 - \tau) \phi \right)^2}
+    \sigma_N^2 
+    - \frac{\theta^m \gamma \zeta (1 - \tau) (\gamma - \phi) (1 - \phi)^2}{\left( \gamma \tau + (1 - \tau) \phi \right)^2} \tilde{\sigma}^2 - \\
+  & \frac{\theta^m (\gamma - 1)^2 \zeta (1 - \tau)(\gamma - \phi) \phi^2}{\gamma \left( 
+    \gamma \tau + (1 - \tau) \phi \right)^2}\sigma_{\chi}^2.
+\end{align*}
+Incentives to accumulate capital in the target country thus decrease
+relative to the outside country. Since the marginal product of labor
+rises with the level of capital accumulation, the exchange rate
+stabilization decreases wages in the target country relative to all
+other countries.
+
+
+

@@ -129,7 +129,11 @@ than the previous version. We therefore thank the referee for pushing
 us on various aspects of the paper.
 
 \begin{itemize}
-\item[1.1] \textit{Change the tone of the introduction...}
+\item[1.1] \textit{Change the tone of the introduction. Make it clear
+    that you would like to make a conceptual point and chose to do so
+    in a standard framework. You inherit all the shortcomings of that
+    framework, but none are crucial to your main message that is to
+    apply generally.}
 
 \item FIXME
 
@@ -137,7 +141,7 @@ us on various aspects of the paper.
 
 
 \item[1.2] \textit{Please clarify better the relationship between
-    firms and exchange rates...}
+    firms and exchange rates.}
 
 \item FIXME.
 
@@ -147,7 +151,12 @@ us on various aspects of the paper.
 \item[1.3] \textit{Change the last section of the paper to use a model
     of currency market segmentation and compare the results there.}
 
-\item FIXME.
+\item Thank you for this comment. In general, we agree that we should
+  clarify the link between models with international currency market
+  segmentation from the literature and our setup. Towards this goal, we
+  have re-written the model in Section [FIXME] such that each country
+  contains a financial intermediary that trades in international bonds
+  whereas households only hold domestic bonds.
 
 \item[$\rightarrow $] FIXME.
 
@@ -176,7 +185,38 @@ on various aspects of the paper.
 
 \item FIXME
 
-\item[$\rightarrow $] FIXME
+\item[$\rightarrow $] Under lasseiz faire, the price of the non-traded
+  good in any given country $h$ is:
+  \begin{equation*}
+    p^{h \ast}_N
+    = \frac{(1 - \tau)(\gamma - 1)}{1 + (\gamma - 1) \tau} \bar{y}_N
+    - \frac{\gamma}{1 + (\gamma - 1) \tau} y^h_N
+    + \log\left( \frac{1 - \tau}{\tau} \right),
+  \end{equation*}
+  where $\bar{y}_N = \sum \theta^h y^h_N$ is the world average
+  production of non-traded goods. Thus, the first term is common
+  across all countries. However, the second term is country-specific
+  and thus determines the difference in the relative price of
+  non-traded goods across countries: If a country $h$ has a relatively
+  low production of the non-traded good, $p^h_N$, rises relative to
+  $p^f_N$ in all other countries $f$. This relative increase in the
+  price of the non-traded good leads to an increase in the real price
+  level in $h$, which also implies the payoff of the country $h$
+  risk-free bond is high relative to the risk-free bonds in all other
+  countries.
+
+  Under the tax policy, the price of the non-traded good in the
+  stabilizing country is:
+  \begin{equation*}
+    p^m_N
+    = p^{m \ast}_N
+    + \zeta \frac{(\theta^m + (\gamma - 1) \tau)}{\tau (1 + (\gamma - 1) \tau)}
+    \left( y^m_N - y^t_N \right).
+  \end{equation*}
+  Whenever the production of non-traded goods in the target country is
+  relatively low, the tax policy leads to an increase in the relative
+  price of the non-traded good.
+
 
 \item[3.2] \textit{... (b) whether deviations from the law of one
     price are also necessary in models with specialized tradables
